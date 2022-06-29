@@ -7,7 +7,7 @@
 ## Problems List
 <details>
   
-  <summary>1. Even or Odd number</summary>
+  <summary>1. Positive or negative number</summary>
   
   **Problem statement:** Given an integer number as input, the objective is to write a program to check if the given number is positive or negative or zero.
   
@@ -47,4 +47,45 @@ public class Main {
 }
 ```
                       
+</details>
+	
+<details>
+	
+	<summary>**2. Even or odd number** </summary>
+	
+	**Problem statement:** Given an integer number as input, the objective is the write a program to check whether the input number is even or odd.
+	
+	**Test cases:**
+	```
+Input: 11
+Output: Odd
+
+Input: -62
+Output: Even
+
+Input: 0
+Output: Even
+```
+	**Solution:**
+	```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int num = scan.nextInt();
+
+		if(num % 2 == 0) {
+			System.out.println("Even");
+		} else {
+			System.out.println("Odd");
+		}
+
+		scan.close();
+	}
+}
+```
+	
 </details>
