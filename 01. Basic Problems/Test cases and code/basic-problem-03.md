@@ -13,6 +13,7 @@ Output: 55
 ```
 
 **Solution**
+
 _**Approach 1: Using loop**_
 
 ```java

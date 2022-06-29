@@ -8,4 +8,4 @@
 
 1. [Positive or negative number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/Test%20cases%20and%20code/basic-problem-01.md)
 2. [Even or odd number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/Test%20cases%20and%20code/basic-problem-02.md)
-3. [Sum of first n natural numbers](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/Test%20cases%20and%20code/basic-problem-03.md)
+3. [Sum of first n natural numbers](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-03.md)
