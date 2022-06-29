@@ -57,20 +57,21 @@ public class Main {
 	
 	**Test cases:**
 	```
-Input: 11
-Output: Odd
+	Input: 11
+	Output: Odd
 
-Input: -62
-Output: Even
+	Input: -62
+	Output: Even
 
-Input: 0
-Output: Even
-```
+	Input: 0
+	Output: Even
+	```
+	
 	**Solution:**
 	```java
-import java.util.Scanner;
+	import java.util.Scanner;
 
-public class Main {
+	public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -84,8 +85,8 @@ public class Main {
 		}
 
 		scan.close();
+		}
 	}
-}
-```
+	```
 	
 </details>
