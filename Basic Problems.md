@@ -9,8 +9,7 @@
   
   <summary>1. Even or Odd number</summary>
   
-  **Problem statement:** 
-  - Given an integer number as input, the objective is to write a program to check if the given number is positive or negative or zero.
+  **Problem statement:** Given an integer number as input, the objective is to write a program to check if the given number is positive or negative or zero.
   
   **Test cases**
   ```
@@ -24,5 +23,28 @@
   Output: Zero
   ```
   
-  [**Solution**](https://github.com/TheParthMaru/Java-Zero-To-Hero/blob/main/Programming%20Fundamentals/Basics/PositiveNegativeNumber.javahttps://github.com/TheParthMaru/Java-Zero-To-Hero/blob/main/Programming%20Fundamentals/Basics/PositiveNegativeNumber.java)
+  **Solution**
+  ```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int num = scan.nextInt();
+
+		if(num > 0) {
+			System.out.println("Positive");
+		} else if(num < 0) {
+			System.out.println("Negative");
+		} else {
+			System.out.println("Zero");
+		}
+
+		scan.close();
+	}
+}
+```
+                      
 </details>
