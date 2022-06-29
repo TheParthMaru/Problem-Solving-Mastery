@@ -6,5 +6,5 @@
 
 ## Problems List
 
-1. [Positive or negative number](D:\Programming\Java\Problem-Solving-Mastery\Test cases and code\basic-problem-01.md)
-2. [Even or odd number]()
+1. [Positive or negative number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/Test%20cases%20and%20code/basic-problem-01.md)
+2. [Even or odd number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/Test%20cases%20and%20code/basic-problem-02.md)
