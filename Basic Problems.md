@@ -53,7 +53,7 @@
 [comment]: <> (Problem 2: Even or odd number)
 <details>
   
-	<summary>2. Even or odd number</summary>
+<summary>2. Even or odd number</summary>
  
   **Problem statement:** Given an integer number as input, the objective is the write a program to check whether the input number is even or odd.
   
