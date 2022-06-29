@@ -57,7 +57,7 @@ Output: Negative
 [comment]: <> (Problem 2: Even or odd number)
 **2. Even or odd number**
 
-**Problem statement: **Given an integer number as input, the objective is the write a program to check whether the input number is even or odd.
+**Problem statement: ** Given an integer number as input, the objective is the write a program to check whether the input number is even or odd.
 
 **Test cases:**
 
