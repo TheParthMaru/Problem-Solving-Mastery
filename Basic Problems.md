@@ -4,6 +4,7 @@
 - May require a bit of math.
 - Main focus is to learn how to build logic and come up with a bruteforce approach.
 
+## Problems List
 <details>
   
   <summary>1. Even or Odd number</summary>
