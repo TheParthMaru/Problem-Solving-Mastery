@@ -1,6 +1,6 @@
 **Problem Statement**
 
-- Given an integer number as input, the objective is the write a program to check whether the input number is even or odd.
+- Given an integer number as input, write a program to check whether the input number is even or odd.
 
 **Test Cases**
 
