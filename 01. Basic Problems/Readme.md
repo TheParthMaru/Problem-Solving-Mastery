@@ -23,3 +23,6 @@
 15. [Fibonacci series upto n terms](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-15.md)
 16. [Factorial of a number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-16.md)
 17. [Power of a number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-17.md)
+18. [Factors of a number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-18.md)
+19. [Prime factors of a number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-19.md)
+20. [Strong number](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-20.md)
