@@ -340,3 +340,147 @@ public class Main {
 		}
 	}
 ```
+
+**Problem 11**
+
+```
+      *
+    * *
+  * * *
+* * * *
+```
+
+**Solution**
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for(int row = 1; row <= n; row++) {
+			char space = ' ';
+			for(int column = 1; column <= n - row; column++) {
+				System.out.print(space + " ");
+			}
+			for(int column = 1; column <= row; column++) {
+				System.out.print("*" + " ");
+			}
+
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
+
+**Problem 12**
+
+```
+      1
+    1 2
+  1 2 3
+1 2 3 4
+```
+
+**Solution**
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for(int row = 1; row <= n; row++) {
+			char space = ' ';
+			for(int column = 1; column <= n - row; column++) {
+				System.out.print(space + " ");
+			}
+			for(int column = 1; column <= row; column++) {
+				System.out.print(column + " ");
+			}
+
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
+
+**Problem 13**
+
+```
+* * * *
+  * * *
+    * *
+      *
+```
+
+**Solution**
+
+_**Approach 1: Simplest approach**_
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for(int row = n; row >= 1; row--) {
+			char space = ' ';
+			for(int column = (n - row); column >= 1; column--) {
+				System.out.print(space + " ");
+			}
+			for(int column = row; column >= 1; column--) {
+				System.out.print("*" + " ");
+			}
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
+
+_**Approach 2: Logical and formula based approach**_
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for(int row = 1; row <= n; row++) {
+			char space = ' ';
+			for(int column = 1; column < row; column++) {
+				System.out.print(space + " ");
+			}
+			for(int column = 1; column <= (n - row + 1); column++) {
+				System.out.print("*" + " ");
+			}
+
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
