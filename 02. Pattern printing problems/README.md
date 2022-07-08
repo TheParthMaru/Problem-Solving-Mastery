@@ -484,3 +484,167 @@ public class Main {
 	}
 }
 ```
+
+**Problem 14**
+
+```
+* * * * * *
+  *       *
+    *     *
+      *   *
+        * *
+          *
+```
+
+**Solution**
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for (int row = 1; row <= n; row++) {
+			for (int column = 1; column <= n; column++) {
+				char space = ' ';
+				if (row == 1) {
+					System.out.print("*" + " ");
+				} else if (column == row || column == n) {
+					System.out.print("*" + " ");
+				} else {
+					System.out.print(space + " ");
+				}
+			}
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
+
+**Problem 15**
+
+```
+*
+* *
+*   *
+*     *
+*       *
+* * * * * *
+```
+
+**Solution**
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for(int row = 1; row <= n; row++) {
+			for(int column = 1; column <= n; column++) {
+				char space = ' ';
+				if(column == 1 || column == row) {
+					System.out.print("*" + " ");
+				}else if(row == n) {
+					System.out.print("*" + " ");
+				}else {
+					System.out.print(space + " ");
+				}
+			}
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
+
+**Problem 16**
+
+```
+* * * * * *
+*       *
+*     *
+*   *
+* *
+*
+```
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for(int row = 1; row <= n; row++) {
+			for(int column = 1; column <= n; column++) {
+				char space = ' ';
+				if(row == 1 || column == 1) {
+					System.out.print("*" + " ");
+				} else if(column == (n-row+1)) {
+					System.out.print("*" + " ");
+				}else {
+					System.out.print(space + " ");
+				}
+			}
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
+
+**Problem 17**
+
+```
+          *
+        * *
+      *   *
+    *     *
+  *       *
+* * * * * *
+```
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+
+		for (int row = 1; row <= n; row++) {
+			for (int column = 1; column <= n; column++) {
+				char space = ' ';
+				if (column == n || column == (n - row + 1)) {
+					System.out.print("*" + " ");
+				} else if (row == n) {
+					System.out.print("*" + " ");
+				} else {
+					System.out.print(space + " ");
+				}
+			}
+			System.out.println();
+		}
+
+		scan.close();
+	}
+}
+```
