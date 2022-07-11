@@ -58,9 +58,8 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
-		boolean isPrime = checkPrime(num);
 
-		if(isPrime) {
+		if(isPrime(num)) {
 			System.out.println("Prime");
 		} else {
 			System.out.println("Composite");
@@ -69,7 +68,8 @@ public class Main {
 		scan.close();
 	}
 
-	static boolean checkPrime(int num) {
+	static boolean isPrime(int num) {
+		// 2 is the smallest prime
 		if(num <= 1) {
 			return false;
 		}
@@ -87,6 +87,58 @@ public class Main {
 		// Checking for odd numbers
 		for(int i = 3; i * i <= num; i+=2) {
 			if(num % i == 0) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+}
+```
+
+_**Approach 3: Skipping even iterations and considering large numbers**_
+
+- In the approach given above, if the size of the given number is too large than its square root will be also very large
+- So to deal with large size input we will deal with the few numbers such as 1, 2 ,3 and the numbers which are divisible by 2 and 3 in separate cases.
+- For remaining numbers, we will iterate our loop from 5 to sqrt(num) and check for each iteration whether that (iteration) or that (iteration+2) divides n or not.
+- If we find any number that divides, we return false.
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int num = scan.nextInt();
+
+		if (isPrime(num)) {
+			System.out.println("Prime");
+		} else {
+			System.out.println("Composite");
+		}
+
+		scan.close();
+	}
+
+	static boolean isPrime(int num) {
+		// 2 is the smallest prime number
+		if (num <= 1) {
+			return false;
+		}
+
+		if (num == 2 || num == 3) {
+			return true;
+		}
+
+		// All numbers divisible by 2 or 3
+		if (num % 2 == 0 || num % 3 == 0) {
+			return false;
+		}
+
+		for (int i = 5; i * i <= num; i += 6) {
+			if (num % i == 0 || num % (i + 2) == 0) {
 				return false;
 			}
 		}
