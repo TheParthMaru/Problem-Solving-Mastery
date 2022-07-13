@@ -5,3 +5,5 @@
 3. [Minimum and maximum element in the array](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-03.md)
 4. [Rotate array left by k elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-04.md)
 5. [Rotate array right by k elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-05.md)
+6. [Find the second smallest element](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-06.md)
+7. [Sum of all elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-07.md)
