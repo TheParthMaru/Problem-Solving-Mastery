@@ -7,3 +7,5 @@
 5. [Rotate array right by k elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-05.md)
 6. [Find the second smallest element](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-06.md)
 7. [Sum of all elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-07.md)
+8. [Arrange numbers in array](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-08.md)
+9. [Swap alternate elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-09.md)
