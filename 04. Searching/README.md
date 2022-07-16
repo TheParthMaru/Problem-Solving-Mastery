@@ -78,6 +78,7 @@ public class Main {
 
 - In binary search, we are searching for an element in sorted array.
 - We divide the array until we find the element and we return the index if element is found, else we return -1.
+- In binarySearch() method, we are using (mid = start + (end - start) / 2) to prevent overflow.
 
 **Note**
 
@@ -141,7 +142,7 @@ public class Main {
 
 		while(start <= end) {
 			// Midpoint of the array
-			int mid = start + (end - 1) / 2;
+			int mid = start + (end - start) / 2;
 
 			// Checking if the middle element is the element we are searching for
 			if(arr[mid] == element) {
