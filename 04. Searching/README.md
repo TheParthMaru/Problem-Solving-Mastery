@@ -137,7 +137,7 @@ public class Main {
 	// binarySearch() method will return the index of the element
 	static int binarySearch(int[] arr, int element) {
 		// Setting first and last elements of the array
-		int start = arr[0];
+		int start = 0;
 		int end = arr.length - 1;
 
 		while(start <= end) {
