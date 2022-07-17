@@ -21,40 +21,22 @@ Output: 2 3 3 5
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
-
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-
+		
 		int num = scan.nextInt();
 		int divisor = 2;
-
-		while (num != 1) {
-			if (isPrime(divisor)) {
-				if (num % divisor == 0 && num >= divisor) {
-					System.out.print(divisor + " ");
-					num /= divisor;
-				} else {
-					divisor++;
-				}
+		
+		while(num > 1) {
+			if(num % divisor == 0) {
+				System.out.print(divisor + " ");
+				num /= divisor;
 			} else {
 				divisor++;
 			}
 		}
-
+		
 		scan.close();
-	}
-
-  // Method to check whether divisor is prime or not
-	static boolean isPrime(int divisor) {
-
-		for (int i = 2; i * i <= divisor; i++) {
-			if (divisor % i == 0) {
-				return false;
-			}
-		}
-
-		return true;
 	}
 }
 ```
