@@ -13,6 +13,9 @@ Output: 125
 
 Input: 11 0
 Output: 1
+
+Input: 0 1
+Output: 0
 ```
 
 **Solution**
