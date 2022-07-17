@@ -18,37 +18,44 @@ Output: 11 13 17 19 23 29 31 37 41 43 47
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
-
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-
+		
 		int n1 = scan.nextInt();
 		int n2 = scan.nextInt();
-
-		for (int i = n1; i <= n2; i++) {
-			// Prime numbers start from 2
-			if (i <= 1) {
-				continue;
-			}
-
-			boolean isPrime = checkPrime(i);
-
-			if (isPrime) {
+		
+		for(int i = n1; i <= n2; i++) {
+			if(isPrime(i)) {
 				System.out.print(i + " ");
 			}
 		}
-
+		
 		scan.close();
 	}
-
-	static boolean checkPrime(int num) {
-		for (int i = 2; i * i <= num; i++) {
-			if (num % i == 0) {
+	
+	static boolean isPrime(int num) {
+		// Eliminates all -ve numbers and 1
+		if(num <= 1) {
+			return false;
+		}
+		
+		// 2 is the only even prime and 2 and 3 are the only consecutive primes
+		if(num == 2 || num == 3) {
+			return true;
+		}
+		
+		// Most of the numbers are divisible by 2 and 3 so avoiding all those numbers
+		if(num % 2 == 0 || num % 3 == 0) {
+			return false;
+		}
+		
+		// All the rest numbers
+		for(int divisor = 5; divisor * divisor <= num; divisor += 6) {
+			if(num % divisor == 0 || num % (divisor+2) == 0) {
 				return false;
 			}
 		}
-
+		
 		return true;
 	}
 }
