@@ -1,6 +1,6 @@
 **Problem Statement**
 
-- Given an integer number as input, find its factors.
+- Given a positive number as input, find its factors.
 
 **Test Cases**
 
@@ -18,22 +18,21 @@ Output: 1 3 5 15
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
-
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-
+		
 		int num = scan.nextInt();
-
-		for(int i = num; i <= Math.abs(num); i++) {
-			if(i == 0) {
-				continue;
-			} else {
-				if(num % i == 0) {
-					System.out.print(i + " ");
-				}
+		
+		for(int i = 1; i <= num; i++) {
+			if(num == 0) {
+				break;
+			}
+			
+			if(num % i == 0) {
+				System.out.print(i + " ");
 			}
 		}
+		
 		scan.close();
 	}
 }
