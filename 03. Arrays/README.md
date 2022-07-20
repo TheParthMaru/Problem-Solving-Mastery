@@ -10,4 +10,4 @@
 8. [Arrange numbers in array](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-08.md)
 9. [Swap alternate elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-09.md)
 10. [Print all pairs](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-10.md)
-11. [Sort 0s and 1s](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-10.md)
+11. [Sort 0s and 1s](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-11.md)
