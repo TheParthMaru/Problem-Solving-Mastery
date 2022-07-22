@@ -181,3 +181,67 @@ public class Main {
 **Complexity**
 
 - Time complexity: O(n<sup>2</sup>)
+
+## Insertion sort
+
+- Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
+- The array is virtually split into a sorted and an unsorted part.
+- Values from the unsorted part are picked and placed at the correct position in the sorted part.
+
+**Code**
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		// Size of input array
+		int n = scan.nextInt();
+
+		// Array of size n
+		int[] arr = new int[n];
+
+		// Input elements in the array
+		for(int i = 0; i < n; i++) {
+			arr[i] = scan.nextInt();
+		}
+
+		// Calling the insertionSort method
+		insertionSort(arr);
+
+		scan.close();
+	}
+
+// Insertion sort logic
+	static void insertionSort(int[] arr) {
+
+		for(int i = 1; i < arr.length; i++) {
+			int key = arr[i];
+			int j = i - 1;
+
+			/*
+			Move elements of arr[0 to i-1], that are > key to one position
+			ahead of their current position
+			*/
+
+			while(j >= 0 && arr[j] > key) {
+				arr[j + 1] = arr[j];
+				j = j - 1;
+			}
+
+			arr[j + 1] = key;
+		}
+
+		printArray(arr);
+	}
+
+	// Method to print array
+	static void printArray(int[] arr) {
+		for(int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+}
+```
