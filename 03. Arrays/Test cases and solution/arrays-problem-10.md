@@ -1,3 +1,5 @@
+## Print all pairs
+
 **Problem statement**
 
 - Given an integer input array of size n, write a program to print all no repeting integers.
