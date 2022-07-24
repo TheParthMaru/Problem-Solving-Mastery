@@ -1,3 +1,5 @@
+## Rotate array left by k elements
+
 **Problem statement**
 
 - Given an integer array of size n, rotate the array left by k elements.
