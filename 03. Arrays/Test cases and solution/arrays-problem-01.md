@@ -1,3 +1,5 @@
+## Print duplicate elements
+
 **Problem statement**
 
 - Write a program to input n size integer array and print the duplicate elements.
