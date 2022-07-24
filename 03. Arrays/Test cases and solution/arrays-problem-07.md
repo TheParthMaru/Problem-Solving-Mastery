@@ -1,3 +1,5 @@
+## Sum of all elements
+
 **Problem statement**
 
 - Given an integer array of size n, find the sum of all the elements in the array.
