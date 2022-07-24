@@ -1,3 +1,5 @@
+## Minimum and maximum element in the array
+
 **Problem statement**
 
 - Write a program to take n size integer array as input and print the minimum and maximum element in it.
