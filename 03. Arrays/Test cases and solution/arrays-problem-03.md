@@ -52,13 +52,8 @@ public class Main {
 		}
 
 		// Finding minimum and maximum
-		int minimum, maximum;
-		if (n == 1) {
-			minimum = arr[0];
-			maximum = arr[0];
-			printMinMax(minimum, maximum);
-			return;
-		}
+		int minimum = Integer.MAX_VALUE;
+		int maximum = Integer.MIN_VALUE;
 
 		if(arr[0] < arr[1]) {
 			minimum = arr[0];
