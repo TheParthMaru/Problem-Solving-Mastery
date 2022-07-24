@@ -38,12 +38,12 @@ public class Main {
 		// Array of size n
 		int[] arr = new int[n];
 
-		// Taking inputs
+		// Input array elements
 		for (int i = 0; i < n; i++) {
 			arr[i] = scan.nextInt();
 		}
 
-		// rotate by k elements
+		// Rotate by k elements
 		int k = scan.nextInt();
 
 		// Calling rotateLeft() method
@@ -53,16 +53,16 @@ public class Main {
 
 	// Method to rotate array left by k elements
 	static void rotateLeft(int arr[], int k) {
-		for(int i = 0; i < k; i++) {
+		for(int i = 1; i <= k; i++) {
 			// Storing the first element
-			int first = arr[0];
+			int firstElement = arr[0];
 			for(int j = 0; j < arr.length - 1; j++) {
 				// Shifting elements
 				arr[j] = arr[j+1];
 			}
 
 			// Adding the first element to the end
-			arr[arr.length-1] = first;
+			arr[arr.length-1] = firstElement;
 		}
 
 		printArray(arr);
