@@ -1,3 +1,5 @@
+## Merge two sorted arrays
+
 **Problem statement**
 
 - Given two integer sorted arrays of size m and n, write a program to merge these sorted arrays.
