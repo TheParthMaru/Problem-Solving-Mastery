@@ -1,3 +1,5 @@
+## Find the second smallest element
+
 **Problem statement**
 
 - Given an integer array of size n, find the second smallest element in the array.
