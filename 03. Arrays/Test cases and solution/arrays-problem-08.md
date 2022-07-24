@@ -1,3 +1,5 @@
+## Arrange numbers in array
+
 **Problem statement**
 
 - You have been given an empty array and its size n. The only input taken from the user will be n. Your task is to populate the array using the integer values in the range 1 to n(both inclusive) in the order: 1,3,.......4,2.
