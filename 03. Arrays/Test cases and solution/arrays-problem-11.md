@@ -1,3 +1,5 @@
+## Sort 0s and 1s
+
 **Problem statement**
 
 - Given an integer input array of size containing all 0s and 1s, sort this array with only one scan and no extra array.
