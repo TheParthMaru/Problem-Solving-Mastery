@@ -53,16 +53,16 @@ public class Main {
 
 	// Method to rotate array right by k elements
 	static void rotateRight(int arr[], int k) {
-		for (int i = 0; i < k; i++) {
+		for (int i = 1; i <= k; i++) {
 			// Storing the last element
-			int last = arr[arr.length - 1];
+			int lastElement = arr[arr.length - 1];
 			for (int j = arr.length-1; j > 0; j--) {
 				// Shifting elements
 				arr[j] = arr[j - 1];
 			}
 
 			// Adding the last element to start
-			arr[0] = last;
+			arr[0] = lastElement;
 		}
 
 		printArray(arr);
