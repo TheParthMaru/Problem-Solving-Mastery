@@ -1,3 +1,5 @@
+## Rotate array right by k elements
+
 **Problem statement**
 
 - Given an integer array of size n, rotate the array right by k elements.
