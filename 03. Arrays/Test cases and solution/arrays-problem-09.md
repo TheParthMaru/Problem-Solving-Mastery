@@ -1,3 +1,5 @@
+## Swap alternate elements
+
 **Problem statement**
 
 - You have been given an array of size n. You need to swap every pair of alternate elements in the array.
