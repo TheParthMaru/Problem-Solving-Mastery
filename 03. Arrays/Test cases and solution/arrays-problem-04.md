@@ -26,6 +26,8 @@ Output:
 
 **Solution**
 
+_Approach 1: Bruteforce approach_
+
 ```java
 import java.util.Scanner;
 
@@ -76,5 +78,62 @@ public class Main {
 			System.out.print(arr[i] + " ");
 		}
 	}
+}
+```
+
+_Approach 2: Reversing the array_
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		// Input size of array
+		int n = scan.nextInt();
+
+		// Declare array of size n
+		int arr[] = new int[n];
+
+		// Input elements in array
+		for(int i = 0; i < n; i++) {
+			arr[i] = scan.nextInt();
+		}
+
+		// Input k
+		int k = scan.nextInt();
+
+		// Calling rotateArray method
+		rotateArray(arr, k);
+	}
+
+	static void rotateArray(int arr[], int k) {
+		int n = arr.length;
+
+		// Reverse the whole array
+		reverseArray(arr, 0, n-1);
+
+		// Reverse first n-k elements
+		reverseArray(arr, 0, n-k-1);
+
+		// Reverse the remaining k elements
+		reverseArray(arr, n-k, n-1);
+
+		// Printing result
+		for(int i = 0; i < n; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+	static void reverseArray(int arr[], int start, int end) {
+		while(start < end) {
+			int temp = arr[start];
+			arr[start] = arr[end];
+			arr[end] = temp;
+			start++; end--;
+		}
+	}
+
 }
 ```
