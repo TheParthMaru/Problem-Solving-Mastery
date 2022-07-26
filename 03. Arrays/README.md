@@ -18,3 +18,8 @@
 ## Problems on 2D arrays
 
 1. [Print sum row wise](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-15.md)
+2. [Largest column sum](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-16.md)
+3. [Largest row or column](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-17.md)
+4. [Sum of boundary and diagonal elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-18.md)
+5. [Wave print](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-19.md)
+6. [Spiral print](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-20.md)
