@@ -16,6 +16,7 @@
 14. [Print all possible pairs](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-14.md)
 15. [Frequency of elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-21.md)
 16. [Count even and odd elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-22.md)
+17. [Replace each element by its rank in the given array](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-23.md)
 
 ## Problems on 2D arrays
 
@@ -25,3 +26,4 @@
 4. [Sum of boundary and diagonal elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-18.md)
 5. [Wave print](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-19.md)
 6. [Spiral print](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-20.md)
+7. [Search an element in matrix](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-24.md)
