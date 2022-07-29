@@ -17,6 +17,8 @@
 15. [Frequency of elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-21.md)
 16. [Count even and odd elements](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-22.md)
 17. [Replace each element by its rank in the given array](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-23.md)
+18. [Sort first half in ascending order and second half in descending order](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-25.md)
+19. [Sort 0, 1 and 2 without using any sorting algorithm](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/03.%20Arrays/Test%20cases%20and%20solution/arrays-problem-26.md)
 
 ## Problems on 2D arrays
 
