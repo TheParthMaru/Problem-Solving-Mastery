@@ -1,3 +1,5 @@
+## Sum of digits of a number
+
 **Problem Statement**
 
 - Given an integer input number, write a program to calculate the sum of the digits of the given number.

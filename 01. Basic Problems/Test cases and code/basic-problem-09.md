@@ -1,3 +1,5 @@
+## Prime numbers in a given range
+
 **Problem Statement**
 
 - Given two integer inputs n1 and n2, write a program to display all the prime numbers between n1 and n2 inclusive.

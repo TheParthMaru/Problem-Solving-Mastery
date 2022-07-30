@@ -1,3 +1,5 @@
+## Even or odd
+
 **Problem Statement**
 
 - Given an integer number as input, write a program to check whether the input number is even or odd.
@@ -13,7 +15,6 @@ Output: Even
 
 Input: 0
 Output: Even
-
 ```
 
 **Solution**

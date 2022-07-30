@@ -1,6 +1,8 @@
+## Greatest of three numbers
+
 **Problem Statement**
 
-- Given two integer inputs n1, n2 and n3, write a program to find the greatest of the two numbers.
+- Given two integer inputs n1, n2 and n3, write a program to find the greatest of the three numbers.
 
 **Test Cases**
 

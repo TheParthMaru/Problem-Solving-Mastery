@@ -1,3 +1,5 @@
+## Sum of first n natural numbers
+
 **Problem Statement**
 
 - Given an integer input, write a program to find the sum of first n natural numbers.
