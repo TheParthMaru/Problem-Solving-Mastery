@@ -1,15 +1,36 @@
 # Basic problems
 
-1. Positive or negative numbers (done)
-2. Even or odd (done)
-3. Sum of first n natural numbers (done) -> Two approaches (formula and loop)
-4. Sum of numbers in a given range (done) -> Two approaches (formula and loop)
-5. Greatest of two numbers (done)
-6. Greatest of three numbers (done)
-7. Leap year of not (done)
-8. Prime number (done) -> 3 approaches (iterative, skiping even iterations and considering large numbers)
-9. Prime number within a given range (done)
-10. Sum of digits of a number (done)
+1. Positive or negative numbers ✔
+2. Even or odd ✔
+3. Sum of first n natural numbers ✔
+
+- Formula approach ✔
+- Iterative approach ✔
+
+4. Sum of numbers in a given range ✔
+
+- Formula approach ✔
+- Iterative approach ✔
+
+5. Greatest of two numbers
+
+- Using if else ✔
+- Using ternary operator ❌
+
+6. Greatest of three numbers
+
+- Using if else ✔
+- Using ternary operator ❌
+
+7. Leap year ✔
+8. Prime number ✔
+
+- Iterative approach ✔
+- Approach with skiping even iterations ✔
+- Approach with considering large numbers ✔
+
+9. Prime numbers in a given range ✔
+10. Sum of digits of a number ✔
 11. Reverse of a number
 
 - Ignoring leading and trailing 0s ✔
