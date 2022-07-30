@@ -1,3 +1,5 @@
+## Sum of numbers in given range
+
 **Problem Statement**
 
 - Given two integer inputs n1 and n2, write a program to find the sum of all the numbers between the given interval.
@@ -45,7 +47,7 @@ _**Approach 2: Formula**_
 
 ```java
 /*
- Formula: b*(b+1)/2 - a*(a+1)/2 + a
+ Formula: n*(n+1)/2 - m*(m+1)/2 + m
 */
 
 import java.util.Scanner;
