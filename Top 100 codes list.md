@@ -12,10 +12,10 @@
 10. Sum of digits of a number (done)
 11. Reverse of a number
 
-- Ignoring leading and trailing 0s ✔✅
-- Approach using strings
-- Recursive approach
-- Handling -ve numbers
+- Ignoring leading and trailing 0s ✔
+- Approach using strings ❌
+- Recursive approach ❌
+- Handling -ve numbers ❌
 
 12. Palindrome number (done)
 13. Calculate the number of digits in the integer
