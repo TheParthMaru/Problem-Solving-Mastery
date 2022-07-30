@@ -1,4 +1,4 @@
-## Greatest of two numbers
+## Greatest of three numbers
 
 **Problem Statement**
 
