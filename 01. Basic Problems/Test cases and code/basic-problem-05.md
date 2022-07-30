@@ -1,3 +1,5 @@
+## Greatest of two numbers
+
 **Problem Statement**
 
 - Given two integer inputs n1 and n2, write a program to find the greatest of the two numbers.
