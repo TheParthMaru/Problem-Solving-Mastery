@@ -19,6 +19,8 @@ Output: 5
 
 **Solution**
 
+_**Approach 1: Using if else**_
+
 ```java
 import java.util.Scanner;
 
@@ -39,6 +41,28 @@ public class Main {
 		} else {
 			System.out.println(n3);
 		}
+
+		scan.close();
+	}
+}
+```
+
+_**Approach 2: Using ternary operator**_
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+
+		int result = (num1 >= num2) ? (num1 >= num3 ? num1 : num3) : (num2 >= num3 ? num2 : num3);
+		System.out.println(result);
 
 		scan.close();
 	}

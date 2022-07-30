@@ -15,12 +15,12 @@
 5. Greatest of two numbers
 
 - Using if else ✔
-- Using ternary operator ❌
+- Using ternary operator ✔
 
 6. Greatest of three numbers
 
 - Using if else ✔
-- Using ternary operator ❌
+- Using ternary operator ✔
 
 7. Leap year ✔
 8. Prime number ✔
