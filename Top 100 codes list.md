@@ -36,13 +36,13 @@
 - Ignoring leading and trailing 0s ✔
 - Approach using strings ❌
 - Recursive approach ❌
-- Handling -ve numbers ❌
+- Handling -ve numbers(Required for recursive approach) ❌
 
 12. Palindrome number ❌
 
 - Iterative approach ✔
 - Recursive approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) for more approaches.
+- Check [gfg](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) for string approaches.
 
 13. Calculate the number of digits in the integer ❌
 
