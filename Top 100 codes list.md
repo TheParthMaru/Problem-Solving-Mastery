@@ -48,7 +48,7 @@
 
 - Iterative approach ✔
 - Recursive approach ❌
-- Log based approach ❌
+- Log based approach ✔
 - String based approach ❌
 - Check [gfg](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/)
 
