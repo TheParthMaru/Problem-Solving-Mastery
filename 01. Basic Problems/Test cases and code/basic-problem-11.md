@@ -1,3 +1,5 @@
+## Reverse digits of a number
+
 **Problem Statement**
 
 - Given a integer input, write the program to reverse the given number.
