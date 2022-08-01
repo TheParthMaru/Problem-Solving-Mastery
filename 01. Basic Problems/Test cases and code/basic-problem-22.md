@@ -1,3 +1,5 @@
+## GCD or HCF
+
 **Problem Statement**
 
 - Given two positive numbers num1 and num2, calculate its gcd or hcf.
