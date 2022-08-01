@@ -1,3 +1,5 @@
+## Power of a number
+
 **Problem Statement**
 
 - Given two integer inputs num and exponent, calculate num to the power of exponent (num<sup>exponent</sup>).
