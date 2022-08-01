@@ -1,3 +1,5 @@
+## Octal to decimal
+
 **Problem Statement**
 
 - Given a positive octal number, find its equivalent decimal number.
