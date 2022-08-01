@@ -49,14 +49,13 @@
 - Iterative approach ✔
 - Recursive approach ❌
 - Log based approach ✔
-- String based approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/)
+- [String based approach](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/) ❌
 
 14. Armstrong number ❌
 
 - Iterative approach ✔
 - Recursive approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/program-for-armstrong-numbers/)
+- [Arrays/Strings based approach](https://www.geeksforgeeks.org/program-for-armstrong-numbers/) ❌
 
 15. Armstrong number in a given range ✔
 16. Fibonacci series upto n terms ❌
