@@ -1,3 +1,5 @@
+## Perfect number
+
 **Problem Statement**
 
 - Given a positive number, find whether the number is a perfect number or not.
