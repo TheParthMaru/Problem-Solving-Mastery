@@ -1,3 +1,5 @@
+## Binary to decimal
+
 **Problem Statement**
 
 - Given a positive binary number, find its equivalent decimal number.
