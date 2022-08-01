@@ -1,3 +1,5 @@
+## Sum of even and odd digits of an integer
+
 **Problem statement**
 
 - Given a positive number as input n, write a program to find the sum of all its even digits and odd digits seperately.
