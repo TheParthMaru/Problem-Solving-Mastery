@@ -1,3 +1,5 @@
+## Strong number
+
 **Problem Statement**
 
 - Given a positive integer input, check whether the entered number is a strong number or not.
