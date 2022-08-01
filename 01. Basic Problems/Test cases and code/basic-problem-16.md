@@ -1,3 +1,5 @@
+## Factorial of a number
+
 **Problem Statement**
 
 - Given an integer number as input, calculate its factorial.

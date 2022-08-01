@@ -49,14 +49,13 @@
 - Iterative approach ✔
 - Recursive approach ❌
 - Log based approach ✔
-- String based approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/)
+- [String based approach](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/) ❌
 
 14. Armstrong number ❌
 
 - Iterative approach ✔
 - Recursive approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/program-for-armstrong-numbers/)
+- [Arrays/Strings based approach](https://www.geeksforgeeks.org/program-for-armstrong-numbers/) ❌
 
 15. Armstrong number in a given range ✔
 16. Fibonacci series upto n terms ❌
@@ -195,3 +194,55 @@
 48. Finding the number of times x digit occurs in a given input. ❌
 49. Finding number of integers which has exactly x divisors. ❌
 50. Finding roots of a quadratic equation. ❌
+
+## Additional Questions
+1. Find the nth armstrong number
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+		
+		System.out.println(nthArmstrong(n));
+		
+		scan.close();
+	}
+	
+	static int nthArmstrong(int n) {
+		int count = 0;
+		for(int i = 1; i <= Integer.MAX_VALUE; i++) {
+			int num = i;
+			int digits = (int) Math.floor(Math.log10(num) + 1);
+			
+			if(checkArmstrong(num, digits)) {
+				++count;
+			}
+			
+			if(count == n) {
+				return i;
+			}
+		}
+		return n;
+	}
+	
+	static boolean checkArmstrong(int num, int digits) {
+		int temp = num, sum = 0;
+		while(temp != 0) {
+			int lastDigit = temp % 10;
+			sum = (int) (sum + Math.floor(Math.pow(lastDigit, digits)));
+			temp /= 10;
+		}
+		
+		if(sum == num) {
+			return true;
+		}
+		
+		return false;
+	}
+}
+```
+2. [Sum of even and odd digits of an integer](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-26.md)

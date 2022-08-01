@@ -1,3 +1,5 @@
+## Armstrong number
+
 **Problem Statement**
 
 - Given an integer input, check whether the given number is an armstrong number or not.
@@ -39,6 +41,7 @@ public class Main {
 		int digits = 0, temp = num;
 
 		// Counting number of digits
+		// You can also use log method to count the number of digits
 		while(temp != 0) {
 			digits++;
 			temp /= 10;

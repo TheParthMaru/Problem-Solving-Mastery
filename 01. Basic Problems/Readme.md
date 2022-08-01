@@ -35,6 +35,6 @@
 23. [LCM](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-23.md)
 24. [Binary to decimal](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-24.md)
 25. [Octal to decimal](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-25.md)
-26. [Sum of even and odd digits](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-26.md)
+26. [Sum of even and odd digits of an integer](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-26.md)
 27. [Calculate the number of digits in the integer](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-27.md)
 28. [nCr](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-28.md)

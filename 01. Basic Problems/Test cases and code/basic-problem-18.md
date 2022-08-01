@@ -1,3 +1,5 @@
+## Factors of a number
+
 **Problem Statement**
 
 - Given a positive number as input, find its factors.
