@@ -195,3 +195,7 @@
 48. Finding the number of times x digit occurs in a given input. ❌
 49. Finding number of integers which has exactly x divisors. ❌
 50. Finding roots of a quadratic equation. ❌
+
+## Additional Questions
+1. Find the nth armstrong number
+2. Sum of even and odd digits of an integer
