@@ -1,3 +1,5 @@
+## Prime factors of a number
+
 **Problem Statement**
 
 - Given a positive integer number as an input, print all prime factors of the number.
