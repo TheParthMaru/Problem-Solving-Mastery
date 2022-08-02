@@ -183,9 +183,9 @@
 - Not solved yet.
 - Refer [gfg](https://www.geeksforgeeks.org/program-determine-quadrant-cartesian-plane/)
 
-40. nCr ❌
-41. nPr ❌
-42. Maximum number of handshakes ❌
+40. nCr ✔
+41. nPr ✔
+42. Maximum number of handshakes ✔
 43. Addition of two fractions ❌
 44. Replace all 0s with 1s in the given integer ❌
 45. Count possible decoding of a given digit sequence ❌
