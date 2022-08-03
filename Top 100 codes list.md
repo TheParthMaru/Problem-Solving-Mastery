@@ -95,20 +95,13 @@
 - Iterative approach ✔
 - Recursive approach ❌
 
-24. Perfect Square ❌
-
-- Not solved yet
-- Refer [gfg](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)
-
-25. Automorphic number ❌
-
-- Not solved yet
-- Refer [gfg](https://www.geeksforgeeks.org/automorphic-number/)
+24. Perfect Square ✔
+25. Automorphic number ✔
 
 26. Harshad number ❌
 
-- Not solved yet
-- Refer [gfg](https://www.geeksforgeeks.org/harshad-or-niven-number/)
+- Basic approach ✔
+- String approach → [gfg](https://www.geeksforgeeks.org/harshad-or-niven-number/)
 
 27. Abundant number ❌
 
@@ -196,7 +189,9 @@
 50. Finding roots of a quadratic equation. ❌
 
 ## Additional Questions
+
 1. Find the nth armstrong number
+
 ```java
 import java.util.Scanner;
 
@@ -206,29 +201,29 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 
 		int n = scan.nextInt();
-		
+
 		System.out.println(nthArmstrong(n));
-		
+
 		scan.close();
 	}
-	
+
 	static int nthArmstrong(int n) {
 		int count = 0;
 		for(int i = 1; i <= Integer.MAX_VALUE; i++) {
 			int num = i;
 			int digits = (int) Math.floor(Math.log10(num) + 1);
-			
+
 			if(checkArmstrong(num, digits)) {
 				++count;
 			}
-			
+
 			if(count == n) {
 				return i;
 			}
 		}
 		return n;
 	}
-	
+
 	static boolean checkArmstrong(int num, int digits) {
 		int temp = num, sum = 0;
 		while(temp != 0) {
@@ -236,13 +231,14 @@ public class Main {
 			sum = (int) (sum + Math.floor(Math.pow(lastDigit, digits)));
 			temp /= 10;
 		}
-		
+
 		if(sum == num) {
 			return true;
 		}
-		
+
 		return false;
 	}
 }
 ```
+
 2. [Sum of even and odd digits of an integer](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-26.md)
