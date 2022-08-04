@@ -180,7 +180,7 @@
 44. Replace all 0s with 1s in the given integer ❌
 45. Count possible decoding of a given digit sequence ❌
 46. Convert digit/ number to words ❌
-47. Counting number of days in a given month of a year ❌
+47. Counting number of days in a given month of a year ✔
 48. Finding the number of times x digit occurs in a given input. ❌
 49. Finding number of integers which has exactly x divisors. ❌
 50. Finding roots of a quadratic equation. ❌
