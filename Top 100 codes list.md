@@ -171,10 +171,7 @@
 - Not solved yet as array approach required.
 - Refer [gfg](https://www.geeksforgeeks.org/java-program-to-convert-octal-to-binary/)
 
-39. Quadrants in which a given coordinate lies ❌
-
-- Not solved yet.
-- Refer [gfg](https://www.geeksforgeeks.org/program-determine-quadrant-cartesian-plane/)
+39. Quadrants in which a given coordinate lies ✔
 
 40. nCr ✔
 41. nPr ✔
