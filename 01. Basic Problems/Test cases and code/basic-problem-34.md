@@ -4,20 +4,28 @@
 
 ```
 Input: 0 0
-Output: Origin
+Output: origin
 
-Input: 1 6
-Output: 1
+Input: 0 6
+Output: y-axis
 
-Input: -6 3
-Output: 2
+Input: 3 0
+Output: x-axis
 
-Input: -5 -5
-Output: 3
+Input: 1 4
+Output: Quadrant I
 
-Input: 1 -1
-Output: 4
+Input: -3 7
+Output: Quadrant II
+
+Input: -5 -6
+Output: Quadrant III
+
+Input: 2 -8
+Output: Quadrant IV
 ```
+
+**Solution**
 
 ```java
 import java.util.Scanner;
@@ -31,24 +39,22 @@ public class Main {
 		int y = scan.nextInt();
 
 		if (x == 0 && y == 0) {
-			System.out.println("Origin");
-		} else {
-			System.out.println(findQuadrant(x, y));
-		}
-		scan.close();
-	}
-
-	static int findQuadrant(int x, int y) {
-
-		if (x > 0 && y > 0) {
-			return 1;
+			System.out.println("origin");
+		} else if (x == 0 && y != 0) {
+			System.out.println("y-axis");
+		} else if (y == 0 && x != 0) {
+			System.out.println("x-axis");
+		} else if (x > 0 && y > 0) {
+			System.out.println("Quadrant I");
 		} else if (x < 0 && y > 0) {
-			return 2;
+			System.out.println("Quadrant II");
 		} else if (x < 0 && y < 0) {
-			return 3;
+			System.out.println("Quadrant III");
 		} else {
-			return 4;
+			System.out.println("Quadrant IV");
 		}
+
+		scan.close();
 	}
 }
 ```
