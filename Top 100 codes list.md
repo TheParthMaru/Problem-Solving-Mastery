@@ -2,10 +2,10 @@
 
 1. Positive or negative numbers ✔✔
 2. Even or odd ✔✔
-3. Sum of first n natural numbers ✔
+3. Sum of first n natural numbers ✔✔
 
-- Formula approach ✔
-- Iterative approach ✔
+- Formula approach ✔✔
+- Iterative approach ✔✔
 
 4. Sum of numbers in a given range ✔
 
