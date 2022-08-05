@@ -12,12 +12,12 @@
 - Formula approach ✔
 - Iterative approach ✔
 
-5. Greatest of two numbers
+5. Greatest of two numbers ✔✔
 
 - Using if else ✔
 - Using ternary operator ✔
 
-6. Greatest of three numbers
+6. Greatest of three numbers ✔✔
 
 - Using if else ✔
 - Using ternary operator ✔
