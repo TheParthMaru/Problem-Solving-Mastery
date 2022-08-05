@@ -1,6 +1,6 @@
 # Basic problems
 
-1. Positive or negative numbers ✔
+1. Positive or negative numbers ✔✔
 2. Even or odd ✔
 3. Sum of first n natural numbers ✔
 
