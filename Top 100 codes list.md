@@ -22,7 +22,7 @@
 - Using if else ✔
 - Using ternary operator ✔
 
-7. Leap year ✔
+7. Leap year ✔✔
 8. Prime number ✔
 
 - Iterative approach ✔
