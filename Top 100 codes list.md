@@ -7,7 +7,7 @@
 - Formula approach ✔✔
 - Iterative approach ✔✔
 
-4. Sum of numbers in a given range ✔
+4. Sum of numbers in a given range ✔✔
 
 - Formula approach ✔
 - Iterative approach ✔
