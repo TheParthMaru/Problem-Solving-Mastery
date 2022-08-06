@@ -53,6 +53,7 @@ public class Main {
 ```
 
 _**Approach 2: Skipping even iterations**_
+- We skip all the even iterations as all the even numbers except 2 are not primes.
 
 ```java
 import java.util.Scanner;
