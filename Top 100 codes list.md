@@ -8,7 +8,7 @@
 6. Greatest of three numbers ✔✔
 7. Leap year ✔✔
 8. Prime number ✔✔
-9. Prime numbers in a given range ✔
+9. Prime numbers in a given range ✔✔
 10. Sum of digits of a number ✔
 11. Reverse digits of a number ❌
 
