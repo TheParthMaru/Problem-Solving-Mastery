@@ -59,41 +59,44 @@ _**Approach 2: Skipping even iterations**_
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
 
-		if(isPrime(num)) {
-			System.out.println("Prime");
+		if (checkPrime(num)) {
+			System.out.println("Prime number");
 		} else {
-			System.out.println("Composite");
+			System.out.println("Composite number");
 		}
 
 		scan.close();
 	}
 
-	static boolean isPrime(int num) {
-		// 2 is the smallest prime
-		if(num <= 1) {
+	static boolean checkPrime(int num) {
+		/*
+		 * Negative numbers, 0 and 1 are not considered as prime. So eliminating those
+		 * numbers.
+		 */
+
+		if (num <= 1) {
 			return false;
 		}
 
 		// 2 is the only even prime
-		if(num == 2) {
+		if (num == 2) {
 			return true;
 		}
 
-		// All even numbers except 2 are not prime numbers
-		if(num % 2 == 0) {
+		// All even numbers except 2 are not primes
+		if (num % 2 == 0) {
 			return false;
 		}
 
-		// Checking for odd numbers
-		for(int i = 3; i * i <= num; i+=2) {
-			if(num % i == 0) {
+		// Skipping even iterations
+		for (int i = 3; i * i <= num; i += 2) {
+			if (num % i == 0) {
 				return false;
 			}
 		}
