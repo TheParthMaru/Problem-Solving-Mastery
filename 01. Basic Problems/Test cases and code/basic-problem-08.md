@@ -4,6 +4,10 @@
 
 - Given an integer input greater than 0, write a program to check whether entered number is prime or not.
 
+**Note:**
+- Negative integers cannot be prime numbers.
+- Prime numbers are integers greater than 1 with no positive divisors besides 1 and itself.
+
 **Test Cases**
 
 ```
