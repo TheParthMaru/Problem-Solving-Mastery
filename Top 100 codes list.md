@@ -3,32 +3,11 @@
 1. Positive or negative numbers ✔✔
 2. Even or odd ✔✔
 3. Sum of first n natural numbers ✔✔
-
-- Formula approach ✔✔
-- Iterative approach ✔✔
-
 4. Sum of numbers in a given range ✔✔
-
-- Formula approach ✔
-- Iterative approach ✔
-
 5. Greatest of two numbers ✔✔
-
-- Using if else ✔
-- Using ternary operator ✔
-
 6. Greatest of three numbers ✔✔
-
-- Using if else ✔
-- Using ternary operator ✔
-
 7. Leap year ✔✔
 8. Prime number ✔
-
-- Iterative approach ✔
-- Approach with skiping even iterations ✔
-- Approach with considering large numbers ✔
-
 9. Prime numbers in a given range ✔
 10. Sum of digits of a number ✔
 11. Reverse digits of a number ❌
