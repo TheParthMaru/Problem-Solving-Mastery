@@ -117,36 +117,45 @@ _**Approach 3: Skipping even iterations and considering large numbers**_
 import java.util.Scanner;
 
 public class Main {
+	public static void main(String[] args) {
 
-	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
 
-		if (isPrime(num)) {
-			System.out.println("Prime");
+		if (checkPrime(num)) {
+			System.out.println("Prime number");
 		} else {
-			System.out.println("Composite");
+			System.out.println("Composite number");
 		}
 
 		scan.close();
 	}
 
-	static boolean isPrime(int num) {
-		// 2 is the smallest prime number
+	static boolean checkPrime(int num) {
+		/*
+		 * Negative numbers, 0 and 1 are not considered as prime. So eliminating those
+		 * numbers.
+		 */
+
 		if (num <= 1) {
 			return false;
 		}
+
+		// 2 and 3 are the only adjacent primes
 
 		if (num == 2 || num == 3) {
 			return true;
 		}
 
-		// All numbers divisible by 2 or 3
+		// Eliminating all the factors of 2 and 3 as they won't be primes
 		if (num % 2 == 0 || num % 3 == 0) {
 			return false;
 		}
 
+		/*
+		 * Checking for all the multiples of 5 and 7
+		 */
 		for (int i = 5; i * i <= num; i += 6) {
 			if (num % i == 0 || num % (i + 2) == 0) {
 				return false;
