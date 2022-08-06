@@ -9,8 +9,10 @@
 7. Leap year ✔✔
 8. Prime number ✔✔
 9. Prime numbers in a given range ✔✔
-10. Sum of digits of a number ✔
-11. Reverse digits of a number ❌
+10. Sum of digits of a number ❌
+- Iterative apporach ✔✔
+- [Recursive approach](https://www.geeksforgeeks.org/java-program-for-sum-the-digits-of-a-given-number/) ❌
+12. Reverse digits of a number ❌
 
 - Ignoring leading and trailing 0s ✔
 - Approach using strings ❌
