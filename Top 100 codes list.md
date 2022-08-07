@@ -14,7 +14,7 @@
 - [Recursive approach](https://www.geeksforgeeks.org/java-program-for-sum-the-digits-of-a-given-number/) ❌
 11. Reverse digits of a number ❌
 
-- Ignoring leading and trailing 0s ✔
+- Ignoring leading and trailing 0s ✔✔
 - Approach using strings ❌
 - Recursive approach ❌
 - Handling -ve numbers(Required for recursive approach) ❌
