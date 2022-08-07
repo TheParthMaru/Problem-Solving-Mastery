@@ -17,6 +17,7 @@ Output: 1 3 5 15
 **Solution**
 
 _**Approach 1: Bruteforce approach**_
+- Doesn't handle negative numbers.
 
 ```java
 import java.util.ScanApproach 1: Bruteforce approachner;
@@ -44,6 +45,7 @@ _**Approach 2: Pairs of factors**_
 - Pairs of factors will be (1, 100), (2, 50), (4, 25), (5, 20) and (10, 10).
 - The repeating factor needs to be printed only once.
 - This approach won't print factors in sorted order so to overcome that we can use ArrayList.
+- Doesn't handle negative numbers.
 ```java
 import java.util.Scanner;
 
