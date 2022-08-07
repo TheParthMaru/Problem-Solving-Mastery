@@ -17,7 +17,7 @@
 - Ignoring leading and trailing 0s ✔✔
 - Approach using strings ❌
 - Recursive approach ❌
-- Handling -ve numbers(Required for recursive approach) ❌
+- Handling -ve numbers (Required for recursive approach) ❌
 
 12. Palindrome number ❌
 
@@ -27,9 +27,9 @@
 
 13. Calculate the number of digits in the integer ❌
 
-- Iterative approach ✔
+- Iterative approach ✔✔
 - Recursive approach ❌
-- Log based approach ✔
+- Log based approach ✔✔
 - [String based approach](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/) ❌
 
 14. Armstrong number ❌
