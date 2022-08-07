@@ -62,12 +62,7 @@
 - Recursive approach ❌
 
 19. Power of a number ✔✔
-20. Factors of a number ❌
-
-- Iterative approach ✔
-- Handling -ve numbers approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/)
-
+20. Factors of a number ✔✔
 21. Finding Prime Factors of a number ❌
 
 - Iterative approach ✔
