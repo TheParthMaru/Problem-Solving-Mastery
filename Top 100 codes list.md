@@ -28,8 +28,8 @@
 13. Calculate the number of digits in the integer ❌
 
 - Iterative approach ✔✔
-- Recursive approach ❌
 - Log based approach ✔✔
+- Recursive approach ❌
 - [String based approach](https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/) ❌
 
 14. Armstrong number ❌
