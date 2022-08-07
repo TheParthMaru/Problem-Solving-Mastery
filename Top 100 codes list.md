@@ -58,7 +58,7 @@
  
 18. Factorial of a number ❌
 
-- Iterative approach ✔
+- Iterative approach ✔✔
 - Recursive approach ❌
 
 19. Power of a number ✔
