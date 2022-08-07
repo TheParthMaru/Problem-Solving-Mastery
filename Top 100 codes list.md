@@ -61,7 +61,7 @@
 - Iterative approach ✔✔
 - Recursive approach ❌
 
-19. Power of a number ✔
+19. Power of a number ✔✔
 20. Factors of a number ❌
 
 - Iterative approach ✔
