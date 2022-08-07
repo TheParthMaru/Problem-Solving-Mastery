@@ -66,7 +66,7 @@
 21. Finding Prime Factors of a number ✔✔
 22. Strong number ❌
 
-- Iterative approach ✔
+- Iterative approach ✔✔
 - Recursive approach ❌
 
 23. Perfect number ❌
