@@ -34,7 +34,7 @@
 
 14. Armstrong number ❌
 
-- Iterative approach ✔
+- Iterative approach ✔✔
 - Recursive approach ❌
 - [Arrays/Strings based approach](https://www.geeksforgeeks.org/program-for-armstrong-numbers/) ❌
 
