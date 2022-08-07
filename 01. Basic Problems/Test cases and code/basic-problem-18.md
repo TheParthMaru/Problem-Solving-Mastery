@@ -69,3 +69,44 @@ public class Main {
 	}
 }
 ```
+
+_**Approach 3: Handling -ve numbers**_
+- The drawback of above two approaches is that it cannot handle negative numbers.
+- So to find factors of negative numbers follow the below approach.
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		int num = scan.nextInt();
+
+		if (num < 0) {
+			for (int i = num; i <= Math.abs(num); i++) {
+				if (i == 0) {
+					continue;
+				} else {
+					if (num % i == 0) {
+						System.out.print(i + " ");
+					}
+				}
+			}
+		} else {
+			for (int i = 1; i <= Math.sqrt(num); i++) {
+				if (num % i == 0) {
+					if (num / i == i) {
+						System.out.print(" " + i);
+					} else {
+						System.out.print(i + " " + num / i + " ");
+					}
+				}
+			}
+		}
+
+		scan.close();
+	}
+}
+```
