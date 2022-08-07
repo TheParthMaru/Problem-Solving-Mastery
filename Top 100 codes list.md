@@ -63,11 +63,7 @@
 
 19. Power of a number ✔✔
 20. Factors of a number ✔✔
-21. Finding Prime Factors of a number ❌
-
-- Iterative approach ✔
-- Check [gfg](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) for other approaches.
-
+21. Finding Prime Factors of a number ✔✔
 22. Strong number ❌
 
 - Iterative approach ✔
