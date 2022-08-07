@@ -45,7 +45,7 @@
 - [Recursive approach](https://www.geeksforgeeks.org/program-to-print-first-n-fibonacci-numbers/) ❌
 - Approach using arrays/ dynamic programming ❌
 
-17. Find the nth term of fibonacci series ❌
+17. Find the nth term of fibonacci series (Advance problem) ❌
 
 - [Approach 1: Recursion](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
 - [Approach 2: Dynamic programming](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
