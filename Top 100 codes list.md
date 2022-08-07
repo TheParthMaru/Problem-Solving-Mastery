@@ -38,7 +38,7 @@
 - Recursive approach ❌
 - [Arrays/Strings based approach](https://www.geeksforgeeks.org/program-for-armstrong-numbers/) ❌
 
-15. Armstrong number in a given range ✔
+15. Armstrong number in a given range ✔✔
 16. Fibonacci series upto n terms ❌
 
 - Iterative approach ✔
