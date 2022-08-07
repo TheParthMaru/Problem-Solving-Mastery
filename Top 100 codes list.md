@@ -12,7 +12,7 @@
 10. Sum of digits of a number ❌
 - Iterative apporach ✔✔
 - [Recursive approach](https://www.geeksforgeeks.org/java-program-for-sum-the-digits-of-a-given-number/) ❌
-12. Reverse digits of a number ❌
+11. Reverse digits of a number ❌
 
 - Ignoring leading and trailing 0s ✔
 - Approach using strings ❌
@@ -23,7 +23,7 @@
 
 - Iterative approach ✔
 - Recursive approach ❌
-- Check [gfg](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) for string approaches.
+- [String approach](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) ❌
 
 13. Calculate the number of digits in the integer ❌
 
