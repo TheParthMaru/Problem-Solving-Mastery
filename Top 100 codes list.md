@@ -41,8 +41,8 @@
 15. Armstrong number in a given range ✔✔
 16. Fibonacci series upto n terms ❌
 
-- Iterative approach ✔
-- Recursive approach ❌
+- Iterative approach ✔✔
+- [Recursive approach](https://www.geeksforgeeks.org/program-to-print-first-n-fibonacci-numbers/) ❌
 - Approach using arrays/ dynamic programming ❌
 
 17. Find the nth term of fibonacci series ❌
