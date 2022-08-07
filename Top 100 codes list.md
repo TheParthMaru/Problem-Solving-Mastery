@@ -21,7 +21,7 @@
 
 12. Palindrome number ❌
 
-- Iterative approach ✔
+- Iterative approach ✔✔
 - Recursive approach ❌
 - [String approach](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) ❌
 
