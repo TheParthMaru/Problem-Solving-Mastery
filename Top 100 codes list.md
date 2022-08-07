@@ -47,8 +47,15 @@
 
 17. Find the nth term of fibonacci series ❌
 
-- Check [gfg](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)
-
+- [Approach 1: Recursion](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 2: Dynamic programming](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 3: Space optimized approach 2](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 4: Using power of the matrix {{1, 1}, {1, 0}}](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 5: Optimized approach 4](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 6: Formula O(Log n) Time](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 7: Formula](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 8: DP using memoization(Top down approach)](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+ 
 18. Factorial of a number ❌
 
 - Iterative approach ✔
