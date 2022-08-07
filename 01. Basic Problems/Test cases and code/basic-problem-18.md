@@ -26,10 +26,6 @@ public class Main {
 		int num = scan.nextInt();
 		
 		for(int i = 1; i <= num; i++) {
-			if(num == 0) {
-				break;
-			}
-			
 			if(num % i == 0) {
 				System.out.print(i + " ");
 			}
