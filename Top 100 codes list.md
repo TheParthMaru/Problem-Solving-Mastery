@@ -156,7 +156,7 @@
 41. nPr ✔
 42. Maximum number of handshakes ✔
 43. Addition of two fractions ❌
-44. Replace all 0s with 1s in the given integer ❌
+44. Replace all 0s with 1s in the given integer (String problem) ❌
 45. Count possible decoding of a given digit sequence ❌
 46. Convert digit/ number to words (String problem) ❌
 47. Counting number of days in a given month of a year ✔
