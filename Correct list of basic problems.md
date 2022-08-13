@@ -42,7 +42,7 @@ To do:
 
 1. switch case calculator (done)
 2. Swap two numbers (with temp, without temp) (done)
-3. Convert alphabet case
+3. Convert alphabet case (done)
 4. Determine vowel or not (if-else, switch case)
 5. Square root pg 111
 6. Addition of two fractions
