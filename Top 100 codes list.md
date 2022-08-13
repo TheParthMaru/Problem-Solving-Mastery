@@ -10,16 +10,20 @@
 8. Prime number ✔✔
 9. Prime numbers in a given range ✔✔
 10. Sum of digits of a number ❌
+
 - Iterative apporach ✔✔
 - [Recursive approach](https://www.geeksforgeeks.org/java-program-for-sum-the-digits-of-a-given-number/) ❌
-11. Reverse digits of a number ❌
+
+11. Sum of even and odd digits of an integer
+
+12. Reverse digits of a number ❌
 
 - Ignoring leading and trailing 0s ✔✔
 - Approach using strings ❌
 - Recursive approach ❌
 - Handling -ve numbers (Required for recursive approach) ❌
 
-12. Palindrome number ❌
+13. Palindrome number ❌
 
 - Iterative approach ✔✔
 - Recursive approach ❌
@@ -39,23 +43,16 @@
 - [Arrays/Strings based approach](https://www.geeksforgeeks.org/program-for-armstrong-numbers/) ❌
 
 15. Armstrong number in a given range ✔✔
-16. Fibonacci series upto n terms ❌
+16. Nth armstrong number
+
+- Not solved yet
+
+17. Fibonacci series upto n terms ❌
 
 - Iterative approach ✔✔
 - [Recursive approach](https://www.geeksforgeeks.org/program-to-print-first-n-fibonacci-numbers/) ❌
 - Approach using arrays/ dynamic programming ❌
 
-17. Find the nth term of fibonacci series (Advance problem) ❌
-
-- [Approach 1: Recursion](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 2: Dynamic programming](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 3: Space optimized approach 2](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 4: Using power of the matrix {{1, 1}, {1, 0}}](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 5: Optimized approach 4](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 6: Formula O(Log n) Time](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 7: Formula](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
-- [Approach 8: DP using memoization(Top down approach)](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
- 
 18. Factorial of a number ❌
 
 - Iterative approach ✔✔
@@ -156,11 +153,10 @@
 41. nPr ✔
 42. Maximum number of handshakes ✔
 43. Addition of two fractions ❌
-44. Replace all 0s with 1s in the given integer (String problem) ❌
-45. Count possible decoding of a given digit sequence ❌
-46. Convert digit/ number to words (String problem) ❌
-47. Counting number of days in a given month of a year ✔
-48. Finding the number of times x digit occurs in a given input. ❌
+
+44. Counting number of days in a given month of a year ✔
+45. Finding the number of times x digit occurs in a given input. ❌
+
 - Iterative approach ✔
 - String based approach
 
@@ -218,3 +214,19 @@ public class Main {
 ```
 
 2. [Sum of even and odd digits of an integer](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-26.md)
+
+3. Find the nth term of fibonacci series (Advance problem) ❌
+
+- [Approach 1: Recursion](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 2: Dynamic programming](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 3: Space optimized approach 2](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 4: Using power of the matrix {{1, 1}, {1, 0}}](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 5: Optimized approach 4](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 6: Formula O(Log n) Time](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 7: Formula](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+- [Approach 8: DP using memoization(Top down approach)](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) ❌
+
+44. Replace all 0s with 1s in the given integer (String problem) ❌
+45. Convert digit/ number to words (String problem) ❌
+
+46. Count possible decoding of a given digit sequence (String problem)❌
