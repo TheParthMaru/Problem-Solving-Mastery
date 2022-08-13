@@ -43,14 +43,12 @@ To do:
 1. switch case calculator (done)
 2. Swap two numbers (with temp, without temp) (done)
 3. Convert alphabet case (done)
-4. Determine vowel or not (if-else, switch case)
-5. Square root pg 111
-6. Addition of two fractions
-7. Abundant number
-8. Friendly pair
+4. Determine vowel or not (if-else, switch case) (done)
+5. Addition of two fractions
+6. Abundant number
+7. Friendly pair
 
 Do while special
 
-1. Prblm 27 pg 96
-2. Prblm 29 pg 97
-3. Prblm 30 pg 97
+1. Prblm 29 pg 97
+2. Prblm 30 pg 97

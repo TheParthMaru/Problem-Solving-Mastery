@@ -50,3 +50,4 @@
 38. [Swap two numbers](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-38.md)
 39. [Convert alphabet case](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-39.md)
 40. [Vowel or not](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-40.md)
+41. [Count uppercase, lowercase and digits](https://github.com/TheParthMaru/Problem-Solving-Mastery/blob/main/01.%20Basic%20Problems/Test%20cases%20and%20code/basic-problem-41.md)
