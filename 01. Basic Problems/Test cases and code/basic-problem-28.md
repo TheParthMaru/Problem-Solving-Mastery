@@ -1,17 +1,33 @@
-## nCr
+## Armstrong number
 
-**Problem statement**
+**Problem Statement**
 
-- Given input as n and r, write a program to compute nCr.
+- Given an integer input, check whether the given number is an armstrong number or not.
 
-**Test cases**
+**Note/Formula**
+
+- abcd... = a<sup>n</sup> + b<sup>n</sup> + c<sup>n</sup> + d<sup>n</sup> + ...
+- Example: 153 = 1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup>
+- Power of 3 because total number of digits in 153 = 3.
+- Armstrong number cannot be negative.
+
+**Test Cases**
 
 ```
-Input: 12 5
-Output: 792
+Input: 153
+Output: Armstrong number
 
-Input: 5 0
-Output: 1
+Input: 370
+Output: Armstrong number
+
+Input: -98
+Output: Invalid number
+
+Input: 1634
+Output: Armstrong number
+
+Input: 544
+Output: Not an armstrong number
 ```
 
 **Solution**
@@ -20,32 +36,39 @@ Output: 1
 import java.util.Scanner;
 
 public class Main {
+	public static void main(String[] args) {
 
-	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 
-		int n = scan.nextInt();
-		int r = scan.nextInt();
+		int num = scan.nextInt();
 
-		System.out.println(calculateNCR(n, r));
+		if (num < 0) {
+			System.out.println("Invalid number");
+		} else if (isArmstrong(num)) {
+			System.out.println("Armstrong number");
+		} else {
+			System.out.println("Not a armstrong number");
+		}
 
 		scan.close();
 	}
 
-	static int calculateNCR(int n, int r) {
-		int nCr = calculateFactorial(n) / (calculateFactorial(r) * calculateFactorial(n-r));
+	static boolean isArmstrong(int num) {
+		int digits = (int) (Math.floor(Math.log10(num) + 1));
+		int temp = num;
+		int sum = 0;
 
-		return nCr;
-	}
-
-	static int calculateFactorial(int num) {
-		int factorial = 1;
-
-		for(int i = 1; i <= num; i++) {
-			factorial = factorial * i;
+		while (temp > 0) {
+			int lastDigit = temp % 10;
+			sum = (int) (sum + Math.pow(lastDigit, digits));
+			temp /= 10;
 		}
 
-		return factorial;
+		if (sum == num) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 ```

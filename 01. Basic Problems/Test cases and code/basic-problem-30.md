@@ -1,23 +1,17 @@
-## Maximum number of handshakes
+## Nth armstrong number
 
 **Problem statement**
 
-- There are N persons in a room. Find the maximum number of Handshakes possible.
-- Given the fact that any two persons shake hand exactly once.
+- Given an integer input n, find the nth armstrong number.
 
-**Explanation**
-
-- To maximize the number of handshakes, each person should shake hand with every other person in the room.
-- For the first person, there would be N-1 handshakes.
-- For second person there would N-1 person available but he had already shaken hand with the first person. So there would be N-2 handshakes and so on.
-- So, Total number of handshake = N-1 + N-2 +….+ 1 + 0, which is equivalent to ((N-1)\*N)/2
-  (using the formula of sum of first N natural number).
-
-**Test cases**
+**Test case**
 
 ```
 Input: 10
-Output: 45
+Output: 153
+
+Input: 13
+Output: 407
 ```
 
 **Solution**
@@ -26,20 +20,47 @@ Output: 45
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
 
+	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 
 		int n = scan.nextInt();
 
-		System.out.println(countMaxHandshakes(n));
+		System.out.println(nthArmstrong(n));
 
 		scan.close();
 	}
 
-	static int countMaxHandshakes(int n) {
-		return (n * (n - 1)) / 2;
+	static int nthArmstrong(int n) {
+		int count = 0;
+		for(int i = 1; i <= Integer.MAX_VALUE; i++) {
+			int num = i;
+			int digits = (int) Math.floor(Math.log10(num) + 1);
+
+			if(checkArmstrong(num, digits)) {
+				++count;
+			}
+
+			if(count == n) {
+				return i;
+			}
+		}
+		return n;
+	}
+
+	static boolean checkArmstrong(int num, int digits) {
+		int temp = num, sum = 0;
+		while(temp != 0) {
+			int lastDigit = temp % 10;
+			sum = (int) (sum + Math.floor(Math.pow(lastDigit, digits)));
+			temp /= 10;
+		}
+
+		if(sum == num) {
+			return true;
+		}
+
+		return false;
 	}
 }
-
 ```

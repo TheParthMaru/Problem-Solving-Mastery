@@ -1,27 +1,28 @@
-## GCD or HCF
+## Strong number
 
 **Problem Statement**
 
-- Given two positive numbers num1 and num2, calculate its gcd or hcf.
+- Given a positive integer input, check whether the entered number is a strong number or not.
+
+**Notes/ Formula**
+
+- For a number to be a strong number, the sum of factorial of each digit of the number should equal to the number itself.
+- Example: 145 = 1! + 4! + 5!
 
 **Test Cases**
 
 ```
-Input: 8 12
-Output: 4
+Input: 145
+Output: Strong number
 
-Input: 18 12
-Output: 6
+Input: 444
+Output: Not a strong number
 
-Input: 36 60
-Output: 12
-
-Input: 5 7
-Output: 1
+Input: 2
+Output: Strong number
 ```
 
 **Solution**
-_**Approach 1: **_ Bruteforce
 
 ```java
 import java.util.Scanner;
@@ -32,48 +33,31 @@ public class Main {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num1 = scan.nextInt();
-		int num2 = scan.nextInt();
-		int gcd = 1;
+		int num = scan.nextInt();
+		int temp = num, sum = 0;
 
-		for(int i = 1; i <= num1 || i <= num2; i++) {
-			if(num1 % i == 0 && num2 % i == 0) {
-				gcd = i;
-			}
+		while(temp != 0) {
+			int lastDigit = temp % 10;
+			sum = sum + factorial(lastDigit);
+			temp /= 10;
 		}
 
-		System.out.println(gcd);
+		if(sum == num) {
+			System.out.println("Strong number");
+		} else {
+			System.out.println("Not a strong number");
+		}
 
 		scan.close();
 	}
-}
-```
 
-_**Approach 2: **_ Euclidean algorithm - repetitive subtraction
-
-```java
-import java.util.Scanner;
-
-public class Main {
-
-	public static void main(String args[]) {
-
-		Scanner scan = new Scanner(System.in);
-
-		int num1 = scan.nextInt();
-		int num2 = scan.nextInt();
-
-		while (num1 != num2) {
-			if (num1 > num2) {
-				num1 -= num2;
-			} else {
-				num2 -= num1;
-			}
+	static int factorial(int number) {
+		int fact = 1;
+		for(int i = 1; i <= number; i++) {
+			fact *= i;
 		}
 
-		System.out.println(num1);
-
-		scan.close();
+		return fact;
 	}
 }
 ```

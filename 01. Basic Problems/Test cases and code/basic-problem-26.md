@@ -1,49 +1,52 @@
-## Sum of even and odd digits of an integer
+## Finding the number of times x digit occurs in a given input
 
 **Problem statement**
 
-- Given a positive number as input n, write a program to find the sum of all its even digits and odd digits seperately.
+- For a given integer number, count number of times x digits occurs in the input number.
 
 **Test cases**
 
 ```
-Input:
-n = 1234
+Input: 889889 8
+Output: 4
 
-Output:
-sumEven = 6 sumOdd = 4
+Input: 97986 6
+Output: 1
 
-Input:
-552245
+Input: 1234 9
+Output: 0
 
-Output:
-8 15
+Input: 20000 0
+Output: 4
 ```
 
 **Solution**
+
+_**Approach 1: Iterative approach**_
+
+- This approach will not provide correct answers for leading 0s.
 
 ```java
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
-		int sumEven = 0, sumOdd = 0;
+		int x = scan.nextInt();
+		int count = 0;
 
 		while(num > 0) {
 			int lastDigit = num % 10;
-			if(lastDigit % 2 == 0) {
-				sumEven += lastDigit;
-			} else {
-				sumOdd += lastDigit;
+			if(lastDigit == x) {
+				count++;
 			}
-
 			num /= 10;
 		}
 
-		System.out.println(sumEven + " " + sumOdd);
+		System.out.println(count);
 
 		scan.close();
 	}

@@ -1,59 +1,42 @@
-## Sum of first n natural numbers
+## Positive or negative number
 
 **Problem Statement**
 
-- Given an integer input, write a program to find the sum of first n natural numbers.
+- Given an integer number as input, write a program to check if the given number is positive or negative or zero.
 
 **Test Cases**
 
 ```
-Input: 5
-Output: 15
+Input: 12
+Output: Positive
 
-Input: 10
-Output: 55
+Input: -76
+Output: Negative
+
+Input: 0
+Output: Zero
 ```
 
 **Solution**
 
-_**Approach 1: Using loop**_
-
 ```java
 import java.util.Scanner;
 
 public class Main {
-
 	public static void main(String[] args) {
+
 		Scanner scan = new Scanner(System.in);
 
-		int n = scan.nextInt();
-		int sum = 0;
+		int num = scan.nextInt();
 
-		for(int i = 1; i <= n; i++) {
-			sum += i;
+		if (num > 0) {
+			System.out.println("Positive");
+		} else if (num < 0) {
+			System.out.println("Negative");
+		} else {
+			System.out.println("Zero");
 		}
 
-		System.out.println(sum);
-
-		scan.close();
-	}
-}
-```
-
-_**Approach 2: Using formula**_
-
-```java
-import java.util.Scanner;
-
-public class Main {
-
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-
-		int n = scan.nextInt();
-		int result = (n * (n + 1)) / 2;
-
-		System.out.println(result);
 		scan.close();
 	}
 }

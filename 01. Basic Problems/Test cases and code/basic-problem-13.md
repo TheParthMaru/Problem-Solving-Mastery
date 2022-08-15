@@ -1,74 +1,60 @@
-## Armstrong number
+## Sum of first n natural numbers
 
 **Problem Statement**
 
-- Given an integer input, check whether the given number is an armstrong number or not.
-
-**Note/Formula**
-
-- abcd... = a<sup>n</sup> + b<sup>n</sup> + c<sup>n</sup> + d<sup>n</sup> + ...
-- Example: 153 = 1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup>
-- Power of 3 because total number of digits in 153 = 3.
-- Armstrong number cannot be negative.
+- Given an integer input, write a program to find the sum of first n natural numbers.
 
 **Test Cases**
 
 ```
-Input: 153
-Output: Armstrong number
+Input: 5
+Output: 15
 
-Input: 370
-Output: Armstrong number
-
-Input: -98
-Output: Invalid number
-
-Input: 1634
-Output: Armstrong number
-
-Input: 544
-Output: Not an armstrong number
+Input: 10
+Output: 55
 ```
 
 **Solution**
+
+_**Approach 1: Using loop**_
 
 ```java
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
 
+	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-		int num = scan.nextInt();
+		int n = scan.nextInt();
+		int sum = 0;
 
-		if (num < 0) {
-			System.out.println("Invalid number");
-		} else if (isArmstrong(num)) {
-			System.out.println("Armstrong number");
-		} else {
-			System.out.println("Not a armstrong number");
+		for(int i = 1; i <= n; i++) {
+			sum += i;
 		}
+
+		System.out.println(sum);
 
 		scan.close();
 	}
+}
+```
 
-	static boolean isArmstrong(int num) {
-		int digits = (int) (Math.floor(Math.log10(num) + 1));
-		int temp = num;
-		int sum = 0;
+_**Approach 2: Using formula**_
 
-		while (temp > 0) {
-			int lastDigit = temp % 10;
-			sum = (int) (sum + Math.pow(lastDigit, digits));
-			temp /= 10;
-		}
+```java
+import java.util.Scanner;
 
-		if (sum == num) {
-			return true;
-		} else {
-			return false;
-		}
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int n = scan.nextInt();
+		int result = (n * (n + 1)) / 2;
+
+		System.out.println(result);
+		scan.close();
 	}
 }
 ```

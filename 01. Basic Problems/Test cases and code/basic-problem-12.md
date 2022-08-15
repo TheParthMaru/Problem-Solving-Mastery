@@ -1,21 +1,23 @@
-## Palindrome number
+## Counting number of days in a given month of a year
 
-**Problem Statement**
+**Problem statament**
 
-- Given an integer input, write a program to check whether the number is a palindrome number or not.
+- Given month and year as inputs, determine the number of days present in that month.
 
-**Note**
-
-- Ignore trailing or leading zeros (001 or 1000)
-
-**Test Cases**
+**Test case**
 
 ```
-Input: 1234
-Output: Not a palindrome
+Input: 3 2021
+Output: 31
 
-Input: 13231
-Output: Palindrome
+Input: 6 1996
+Output: 30
+
+Input: 2 2021
+Output: 28
+
+Input: 2 2016
+Output: 29
 ```
 
 **Solution**
@@ -24,27 +26,47 @@ Output: Palindrome
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num = scan.nextInt();
-		int reverse = 0;
-		int temp = num;
+		int month = scan.nextInt();
+		int year = scan.nextInt();
 
-		while(temp != 0) {
-			int lastDigit = temp % 10;
-			reverse =  reverse * 10 + lastDigit;
-			temp /= 10;
+		switch (month) {
+		// Cases for 31 days
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println(31);
+			break;
+
+		// Cases for 30 days
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println(30);
+			break;
+
+		// Case for 28/29 days
+		case 2:
+			if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+				System.out.println(29);
+			} else {
+				System.out.println(28);
+			}
+			break;
+
+		// Invalid month
+		default:
+			System.out.println("Invalid month");
+			break;
 		}
-
-		if(reverse == num) {
-			System.out.println("Palindrome");
-		} else {
-			System.out.println("Not a palindrome");
-		}
-
 		scan.close();
 	}
 }

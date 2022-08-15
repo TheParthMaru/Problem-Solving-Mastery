@@ -1,52 +1,77 @@
-## Finding the number of times x digit occurs in a given input
+## GCD or HCF
 
-**Problem statement**
+**Problem Statement**
 
-- For a given integer number, count number of times x digits occurs in the input number.
+- Given two positive numbers num1 and num2, calculate its gcd or hcf.
 
-**Test cases**
+**Test Cases**
 
 ```
-Input: 889889 8
+Input: 8 12
 Output: 4
 
-Input: 97986 6
+Input: 18 12
+Output: 6
+
+Input: 36 60
+Output: 12
+
+Input: 5 7
 Output: 1
-
-Input: 1234 9
-Output: 0
-
-Input: 20000 0
-Output: 4
 ```
 
 **Solution**
-
-_**Approach 1: Iterative approach**_
-
-- This approach will not provide correct answers for leading 0s.
+_**Approach 1: **_ Bruteforce
 
 ```java
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
+
+	public static void main(String args[]) {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num = scan.nextInt();
-		int x = scan.nextInt();
-		int count = 0;
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int gcd = 1;
 
-		while(num > 0) {
-			int lastDigit = num % 10;
-			if(lastDigit == x) {
-				count++;
+		for(int i = 1; i <= num1 || i <= num2; i++) {
+			if(num1 % i == 0 && num2 % i == 0) {
+				gcd = i;
 			}
-			num /= 10;
 		}
 
-		System.out.println(count);
+		System.out.println(gcd);
+
+		scan.close();
+	}
+}
+```
+
+_**Approach 2: **_ Euclidean algorithm - repetitive subtraction
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String args[]) {
+
+		Scanner scan = new Scanner(System.in);
+
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+
+		while (num1 != num2) {
+			if (num1 > num2) {
+				num1 -= num2;
+			} else {
+				num2 -= num1;
+			}
+		}
+
+		System.out.println(num1);
 
 		scan.close();
 	}

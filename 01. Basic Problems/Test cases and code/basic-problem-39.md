@@ -1,20 +1,17 @@
-## Convert alphabet case
+## Binary to decimal
 
-**Problem statement**
+**Problem Statement**
 
-- Write a program to enter any alphabet. If the entered alphabet is in lower case then convert it into upper case and if it is an upper case alphabet then convert it into lower case.
+- Given a positive binary number, find its equivalent decimal number.
 
-**Test case**
+**Test Cases**
 
 ```
-Input: l
-Output: L
+Input: 1011
+Output: 11
 
-Input: Z
-Output: z
-
-Input: 5
-Output: Invalid alphabet
+Input: 10101001
+Output: 169
 ```
 
 **Solution**
@@ -23,20 +20,23 @@ Output: Invalid alphabet
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
 
+	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 
-		char alphabet = scan.next().charAt(0);
+		int binary = scan.nextInt();
+		int decimal  = 0, temp = binary;
 
-		if (alphabet >= 'A' && alphabet <= 'Z') {
-			System.out.println((char) (alphabet + 32));
-		} else if (alphabet >= 'a' && alphabet <= 'z') {
-			System.out.println((char) (alphabet - 32));
-		} else {
-			System.out.println("Invalid alphabet");
+		int base = 1; // 2 ^ 0
+
+		while(temp != 0) {
+			int lastDigit = temp % 10;
+			decimal += lastDigit *  base;
+			base *= 2;
+			temp /= 10;
 		}
 
+		System.out.println(decimal);
 		scan.close();
 	}
 }

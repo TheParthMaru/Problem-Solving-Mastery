@@ -1,34 +1,43 @@
-## Perfect Square
+## Fibonacci series upto n terms
+
+**Problem Statement**
+
+- Given an integer input n, print fibonacci series upto n terms.
+
+**Test Cases**
+
+```
+Input: 4
+Output: 0 1 1 2
+
+Input: 15
+Output: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+```
 
 **Solution**
-
-_**Approach 1**_
 
 ```java
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
+
+	public static void main(String args[]) {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num = scan.nextInt();
+		int n = scan.nextInt();
+		int termA = 0, termB = 1;
+		System.out.print(termA + " " + termB + " ");
 
-		if (isPerfectSquare(num)) {
-			System.out.println("Perfect square");
-		} else {
-			System.out.println("Not a perfect square");
+
+		// Starting from 3 because first two terms are fixed that is 0 and 1
+		for (int i = 3; i <= n; i++) {
+			int nextTerm = termA + termB;
+			System.out.print(nextTerm + " ");
+			termA = termB;
+			termB = nextTerm;
 		}
-
 		scan.close();
-	}
-
-	static boolean isPerfectSquare(int num) {
-		if (num >= 0) {
-			int squareRoot = (int) Math.sqrt(num);
-			return ((squareRoot * squareRoot) == num);
-		}
-		return false;
 	}
 }
 ```

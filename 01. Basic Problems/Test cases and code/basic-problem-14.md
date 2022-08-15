@@ -1,59 +1,68 @@
-## Armstrong numbers within the given range
+## Sum of numbers in given range
 
-**Problem Statement**
+**Problem statement**
 
-- Given two integers n1 and n2, print all the armstrong numbers between n1 and n2 inclusive.
+- Given two integer inputs n1 and n2, write a program to find the sum of all the numbers between the given interval.
 
-**Test Cases**
+**Test case**
 
 ```
-Input: 1 500
-Output: 1 2 3 4 5 6 7 8 9 153 370 371 407
+Input: 2 5
+Output: 14
 
-Input: 1000 2000
-Output: 1634
+Input: -10 10
+Output: 0
+
+Input: 1 10
+Output: 55
 ```
 
 **Solution**
+
+_**Approach 1: Iterative approach**_
 
 ```java
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
 
 		int n1 = scan.nextInt();
 		int n2 = scan.nextInt();
-		
+		int sum = 0;
+
 		for(int i = n1; i <= n2; i++) {
-			int num = i;
-			
-			if(isArmstrong(num)) {
-				System.out.print(num + " ");
-			}
+			sum += i;
 		}
+
+		System.out.println(sum);
 
 		scan.close();
 	}
+}
+```
 
-	static boolean isArmstrong(int num) {
-		int digits = (int) (Math.floor(Math.log10(num) + 1));
-		int temp = num;
-		int sum = 0;
+_**Approach 2: Formula**_
 
-		while (temp > 0) {
-			int lastDigit = temp % 10;
-			sum = (int) (sum + Math.pow(lastDigit, digits));
-			temp /= 10;
-		}
+```java
+/*
+ Formula: n*(n+1)/2 - m*(m+1)/2 + m
+*/
 
-		if (sum == num) {
-			return true;
-		} else {
-			return false;
-		}
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int n1 = scan.nextInt();
+		int n2 = scan.nextInt();
+		int sum = (n2 * (n2 + 1) / 2) - (n1 * (n1 + 1) / 2) + n1;
+
+		System.out.println(sum);
+
+		scan.close();
 	}
 }
 ```

@@ -1,66 +1,39 @@
-## Sum of numbers in given range
+## Even or odd
 
 **Problem Statement**
 
-- Given two integer inputs n1 and n2, write a program to find the sum of all the numbers between the given interval.
+- Given an integer number as input, write a program to check whether the input number is even or odd.
 
 **Test Cases**
 
 ```
-Input: 2 5
-Output: 14
+Input: 11
+Output: Odd
 
-Input: -10 10
-Output: 0
+Input: -62
+Output: Even
 
-Input: 1 10
-Output: 55
+Input: 0
+Output: Even
 ```
 
 **Solution**
 
-_**Approach 1: Iterative approach**_
-
 ```java
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+
 		Scanner scan = new Scanner(System.in);
 
-		int n1 = scan.nextInt();
-		int n2 = scan.nextInt();
-		int sum = 0;
+		int num = scan.nextInt();
 
-		for(int i = n1; i <= n2; i++) {
-			sum += i;
+		if (num % 2 == 0) {
+			System.out.println("Even");
+		} else {
+			System.out.println("Odd");
 		}
-
-		System.out.println(sum);
-
-		scan.close();
-	}
-}
-```
-
-_**Approach 2: Formula**_
-
-```java
-/*
- Formula: n*(n+1)/2 - m*(m+1)/2 + m
-*/
-
-import java.util.Scanner;
-
-public class Main {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-
-		int n1 = scan.nextInt();
-		int n2 = scan.nextInt();
-		int sum = (n2 * (n2 + 1) / 2) - (n1 * (n1 + 1) / 2) + n1;
-
-		System.out.println(sum);
 
 		scan.close();
 	}

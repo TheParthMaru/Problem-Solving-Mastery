@@ -1,4 +1,18 @@
-## Automorphic number
+## Factorial of a number
+
+**Problem Statement**
+
+- Given an integer number as input, calculate its factorial.
+
+**Test Cases**
+
+```
+Input: 5
+Output: 120
+
+Input: 0
+Output: 1
+```
 
 **Solution**
 
@@ -6,30 +20,22 @@
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
+
+	public static void main(String args[]) {
 
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
+		int fact = 1;
 
-		System.out.println(isAutomorphic(num) ? "Automorphic number" : "Not an automorphic number");
+		for (int i = 1; i <= num; i++) {
+			fact *= i;
+		}
+
+		System.out.println(fact);
 
 		scan.close();
 	}
 
-	static boolean isAutomorphic(int num) {
-		int square = num * num;
-
-		while(num > 0) {
-			if(num % 10 != square % 10) {
-				return false;
-			}
-
-			num /= 10;
-			square /= 10;
-		}
-
-		return true;
-	}
 }
 ```

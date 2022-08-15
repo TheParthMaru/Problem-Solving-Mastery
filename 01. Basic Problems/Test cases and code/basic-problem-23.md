@@ -1,28 +1,30 @@
-## LCM
+## Perfect number
 
 **Problem Statement**
 
-- Given two positive numbers num1 and num2, calculate its lcm.
+- Given a positive number, find whether the number is a perfect number or not.
+
+**Notes/ Formula**
+
+- A number where the sum of its divisors (excluding the number itself) is equal to the number itself.
+- Example: 6 = 1 + 2 + 3 where 1,2 and 3 are divisors of 6
 
 **Test Cases**
 
 ```
-Input: 10 11
-Output: 110
+Input: 6
+Output: Perfect number
 
-Input: 12 14
-Output: 84
+Input: 28
+Output: Perfect number
 
-Input: 1 10
-Output: 10
-
-Input: 0 1
-Output: 0
+Input: 100
+Output: Not a perfect number
 ```
 
 **Solution**
 
-````java
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -31,31 +33,22 @@ public class Main {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num1 = scan.nextInt();
-		int num2 = scan.nextInt();
+		int num = scan.nextInt();
+		int sum = 0;
 
-		int lcm;
-
-		if (num1 == 0 || num2 == 0) {
-			lcm = 0;
-		} else {
-			lcm = (num1 * num2) / gcd(num1, num2);
+		for(int i = 1; i <= num/2; i++) {
+			if(num % i == 0) {
+				sum += i;
+			}
 		}
 
-		System.out.println(lcm);
+		if(sum == num) {
+			System.out.println("Perfect number");
+		} else {
+			System.out.println("Not a perfect number");
+		}
 
 		scan.close();
 	}
-
-	static int gcd(int num1, int num2) {
-		while (num1 != num2) {
-			if (num1 > num2) {
-				num1 -= num2;
-			} else {
-				num2 -= num1;
-			}
-		}
-		return num1;
-	}
-}```
-````
+}
+```

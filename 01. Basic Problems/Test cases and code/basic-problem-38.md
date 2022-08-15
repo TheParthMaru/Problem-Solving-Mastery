@@ -1,21 +1,32 @@
-## Swap two numbers
+## Add two fractions
 
 **Problem statement**
 
-- Given two integer inputs, swap two inputs.
+- Take first fraction input as numerator1 and denominator1. Take second fraction input as numerator2 and denominator2. Add fraction 1 and 2 and the print the result in simplified form.
 
-**Test cases**
+**Test case**
 
 ```
-Input: 5 10
-Output: 10 5
+Input:
+num1 = 5
+deno1 = 3
+num2 = 2
+deno2 = 3
 
-Input: 2 -3
-Output: -3 2
+Output:
+7/3
+
+Input:
+num1 = 1
+deno1 = 500
+num2 = 2
+deno2 = 1500
+
+Output:
+1/300
 ```
 
 **Solution**
-_**Approach 1: Using temporary variable**_
 
 ```java
 import java.util.Scanner;
@@ -25,38 +36,45 @@ public class Main {
 
 		Scanner scan = new Scanner(System.in);
 
+		// First fraction
 		int num1 = scan.nextInt();
+		int deno1 = scan.nextInt();
+
+		// Second fraction
 		int num2 = scan.nextInt();
+		int deno2 = scan.nextInt();
 
-		int temp = num1;
-		num1 = num2;
-		num2 = temp;
+		// Result of addition will be one fraction
+		int num, deno;
 
-		System.out.println(num1 + " " + num2);
+		// If denominator of fraction 1 and 2 is same
+		if (deno1 == deno2) {
+			num = num1 + num2;
+			deno = deno1;
+			calculateGcd(num, deno);
+		} else {
+			num = num1 * deno2 + num2 * deno1;
+			deno = deno1 * deno2;
+			calculateGcd(num, deno);
+		}
 		scan.close();
 	}
-}
-```
 
-_**Approach 2: Not using temporary variable**_
+	// GCD is used to simplify the fraction
+	static void calculateGcd(int num, int deno) {
+		int gcd = 1;
 
-```java
-import java.util.Scanner;
+		for (int i = 1; i <= num || i <= deno; i++) {
+			if (num % i == 0 && deno % i == 0) {
+				gcd = i;
+			}
+		}
 
-public class Main {
-	public static void main(String[] args) {
+		// Simplifying the fraction values
+		num /= gcd;
+		deno /= gcd;
 
-		Scanner scan = new Scanner(System.in);
-
-		int num1 = scan.nextInt();
-		int num2 = scan.nextInt();
-
-		num1 = num1 + num2;
-		num2 = num1 - num2;
-		num1 = num1 - num2;
-
-		System.out.println(num1 + " " + num2);
-		scan.close();
+		System.out.println(num + "/" + deno);
 	}
 }
 ```

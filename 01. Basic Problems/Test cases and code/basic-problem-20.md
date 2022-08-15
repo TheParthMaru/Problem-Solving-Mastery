@@ -1,25 +1,24 @@
-## Strong number
+## Automorphic number
 
-**Problem Statement**
+**Problem statement**
 
-- Given a positive integer input, check whether the entered number is a strong number or not.
+- Given an integer input, determine whether it is an automorphic number or not.
 
 **Notes/ Formula**
 
-- For a number to be a strong number, the sum of factorial of each digit of the number should equal to the number itself.
-- Example: 145 = 1! + 4! + 5!
+- A Number that when squared ends with the number itself is known as the Automorphic Number.
 
-**Test Cases**
+**Test case**
 
 ```
-Input: 145
-Output: Strong number
+Input: 5
+Ouput: Yes
 
-Input: 444
-Output: Not a strong number
+Input: 4
+Output: No
 
-Input: 2
-Output: Strong number
+Input: 6
+Output: Yes
 ```
 
 **Solution**
@@ -28,36 +27,30 @@ Output: Strong number
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 
 		int num = scan.nextInt();
-		int temp = num, sum = 0;
 
-		while(temp != 0) {
-			int lastDigit = temp % 10;
-			sum = sum + factorial(lastDigit);
-			temp /= 10;
-		}
-
-		if(sum == num) {
-			System.out.println("Strong number");
-		} else {
-			System.out.println("Not a strong number");
-		}
+		System.out.println(isAutomorphic(num) ? "Yes" : "No");
 
 		scan.close();
 	}
 
-	static int factorial(int number) {
-		int fact = 1;
-		for(int i = 1; i <= number; i++) {
-			fact *= i;
+	static boolean isAutomorphic(int num) {
+		int square = num * num;
+
+		while(num > 0) {
+			if(num % 10 != square % 10) {
+				return false;
+			}
+
+			num /= 10;
+			square /= 10;
 		}
 
-		return fact;
+		return true;
 	}
 }
 ```

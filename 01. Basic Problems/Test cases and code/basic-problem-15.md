@@ -1,17 +1,23 @@
-## Fibonacci series upto n terms
+## Leap year
 
 **Problem Statement**
 
-- Given an integer input n, print fibonacci series upto n terms.
+- Given an integer input "year", write a program to find whether the given year is a leap year or not.
+
+**Note**
+
+- A year is leap when either
+  - The year must be divisible by 400.
+  - The year must be divisible by 4 but not 100.
 
 **Test Cases**
 
 ```
-Input: 4
-Output: 0 1 1 2
+Input: 2019
+Output: Not a leap year
 
-Input: 15
-Output: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+Input: 2016
+Output: Leap year
 ```
 
 **Solution**
@@ -25,18 +31,14 @@ public class Main {
 
 		Scanner scan = new Scanner(System.in);
 
-		int n = scan.nextInt();
-		int termA = 0, termB = 1;
-		System.out.print(termA + " " + termB + " ");
+		int year = scan.nextInt();
 
-
-		// Starting from 3 because first two terms are fixed that is 0 and 1
-		for (int i = 3; i <= n; i++) {
-			int nextTerm = termA + termB;
-			System.out.print(nextTerm + " ");
-			termA = termB;
-			termB = nextTerm;
+		if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+			System.out.println("Leap year");
+		} else {
+			System.out.println("Not a leap year");
 		}
+
 		scan.close();
 	}
 }

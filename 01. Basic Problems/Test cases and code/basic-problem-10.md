@@ -1,18 +1,8 @@
-## Sum of digits of a number
+## Calculator using switch case
 
-**Problem Statement**
+**Problem statement**
 
-- Given an integer input number, write a program to calculate the sum of the digits of the given number.
-
-**Test Cases**
-
-```
-Input: 1234
-Output: 10
-
-Input: 987654
-Output: 39
-```
+- Write a program to perform all arithmetic operations using switch case.
 
 **Solution**
 
@@ -20,22 +10,39 @@ Output: 39
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num = scan.nextInt();
-		int sum = 0;
-		int temp = num;
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		scan.nextLine();
+		char operator = scan.nextLine().charAt(0);
 
-		while(temp != 0) {
-			int lastDigit = temp % 10;
-			sum += lastDigit;
-			temp /= 10;
+		switch (operator) {
+		case '+':
+			System.out.println(num1 + num2);
+			break;
+
+		case '-':
+			System.out.println(num1 - num2);
+			break;
+
+		case '*':
+			System.out.println(num1 * num2);
+			break;
+
+		case '/':
+			System.out.println(num1 / num2);
+			break;
+
+		case '%':
+			System.out.println(num1 % num2);
+			break;
+
+		default:
+			System.out.println("Invalid operator");
 		}
-
-		System.out.println(sum);
 
 		scan.close();
 	}

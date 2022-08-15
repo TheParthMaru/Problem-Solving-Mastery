@@ -1,45 +1,75 @@
-## Reverse digits of a number
+## Vowel or not
 
-**Problem Statement**
+**Problem statement**
 
-- Given a integer input, write the program to reverse the given number.
+- Write a program to input an alphabet and determine whether it is a vowel or not.
 
-**Note**
-
-- Ignore trailing or leading zeros (001 or 1000)
-
-**Test Cases**
+**Test case**
 
 ```
-Input: 1234
-Output: 4321
+Input: A
+Output: Yes
 
-Input: 13233
-Output: 33231
+Input: Z
+Output: No
 ```
 
 **Solution**
+_**Approach 1: If-else**_
 
 ```java
 import java.util.Scanner;
 
 public class Main {
-
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
 
-		int num = scan.nextInt();
-		int reverse = 0;
-		int temp = num;
+		char alphabet = scan.next().charAt(0);
 
-		while(temp != 0) {
-			int lastDigit = temp % 10;
-			reverse =  reverse * 10 + lastDigit;
-			temp /= 10;
+		alphabet = (char) (alphabet + 32);
+
+		if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u') {
+			System.out.println("Yes");
+		} else {
+			System.out.println("No");
 		}
 
-		System.out.println(reverse);
+		scan.close();
+	}
+}
+```
+
+_**Approach 2: Switch case**_
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+
+		char alphabet = scan.next().charAt(0);
+
+		switch (alphabet) {
+		case 'A':
+		case 'a':
+		case 'E':
+		case 'e':
+		case 'I':
+		case 'i':
+		case 'O':
+		case 'o':
+		case 'U':
+		case 'u':
+			System.out.println("Yes");
+			break;
+		default:
+			System.out.println("No");
+
+
+		}
 
 		scan.close();
 	}

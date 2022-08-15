@@ -1,20 +1,23 @@
-## Prime factors of a number
+## Sum of even and odd digits of an integer
 
-**Problem Statement**
+**Problem statement**
 
-- Given a positive integer number as an input, print all prime factors of the number.
+- Given a positive number as input n, write a program to find the sum of all its even digits and odd digits seperately.
 
-**Test Cases**
+**Test cases**
 
 ```
-Input: 48
-Output: 2 2 2 2 3
+Input:
+n = 1234
 
-Input: 12
-Output: 2 2 3
+Output:
+sumEven = 6 sumOdd = 4
 
-Input: 90
-Output: 2 3 3 5
+Input:
+552245
+
+Output:
+8 15
 ```
 
 **Solution**
@@ -25,19 +28,23 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		
+
 		int num = scan.nextInt();
-		int divisor = 2;
-		
-		while(num > 1) {
-			if(num % divisor == 0) {
-				System.out.print(divisor + " ");
-				num /= divisor;
+		int sumEven = 0, sumOdd = 0;
+
+		while(num > 0) {
+			int lastDigit = num % 10;
+			if(lastDigit % 2 == 0) {
+				sumEven += lastDigit;
 			} else {
-				divisor++;
+				sumOdd += lastDigit;
 			}
+
+			num /= 10;
 		}
-		
+
+		System.out.println(sumEven + " " + sumOdd);
+
 		scan.close();
 	}
 }

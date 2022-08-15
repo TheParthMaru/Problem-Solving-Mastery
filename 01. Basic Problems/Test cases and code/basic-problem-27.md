@@ -1,4 +1,4 @@
-## Calculate the number of digits in the integer
+## Count the number of digits in the integer
 
 **Problems statement**
 

@@ -1,28 +1,17 @@
-## Count uppercase, lowercase and digits
+## nCr
 
 **Problem statement**
 
-- Write a program to read a character until a \* is encountered. Also, count the number of uppercase, lowercase and nuumbers entered.
+- Given input as n and r, write a program to compute nCr.
 
-**Test case**
+**Test cases**
 
 ```
-Input:
-1
-2
-3
-4
-A
-C
-D
-s
-x
-*
+Input: 12 5
+Output: 792
 
-Output:
-Uppercase: 3
-Lowercase: 2
-Numbers: 4
+Input: 5 0
+Output: 1
 ```
 
 **Solution**
@@ -31,31 +20,32 @@ Numbers: 4
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
 
+	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 
-		char character = scan.nextLine().charAt(0);
+		int n = scan.nextInt();
+		int r = scan.nextInt();
 
-		int lowercase = 0, uppercase = 0, numbers = 0;
-
-		do {
-
-			if (character >= 'A' && character <= 'Z') {
-				uppercase++;
-			} else if (character >= 'a' && character <= 'z') {
-				lowercase++;
-			} else if (character >= '0' && character <= '9') {
-				numbers++;
-			}
-			character = scan.nextLine().charAt(0);
-		} while (character != '*');
-
-		System.out.println("Uppercase: " + uppercase);
-		System.out.println("Lowercase: " + lowercase);
-		System.out.println("Numbers: " + numbers);
+		System.out.println(calculateNCR(n, r));
 
 		scan.close();
+	}
+
+	static int calculateNCR(int n, int r) {
+		int nCr = calculateFactorial(n) / (calculateFactorial(r) * calculateFactorial(n-r));
+
+		return nCr;
+	}
+
+	static int calculateFactorial(int num) {
+		int factorial = 1;
+
+		for(int i = 1; i <= num; i++) {
+			factorial = factorial * i;
+		}
+
+		return factorial;
 	}
 }
 ```

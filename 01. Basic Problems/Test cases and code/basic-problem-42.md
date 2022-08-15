@@ -1,29 +1,17 @@
-## Add two fractions
+## nPr
 
 **Problem statement**
 
-- Take first fraction input as numerator1 and denominator1. Take second fraction input as numerator2 and denominator2. Add fraction 1 and 2 and the print the result in simplified form.
+- Given input as n and r, write a program to compute nPr.
 
-**Test case**
+**Test cases**
 
 ```
-Input:
-num1 = 5
-deno1 = 3
-num2 = 2
-deno2 = 3
+Input: 9 0
+Output: 1
 
-Output:
-7/3
-
-Input:
-num1 = 1
-deno1 = 500
-num2 = 2
-deno2 = 1500
-
-Output:
-1/300
+Input: 3 2
+Output: 6
 ```
 
 **Solution**
@@ -32,49 +20,32 @@ Output:
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
 
+	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 
-		// First fraction
-		int num1 = scan.nextInt();
-		int deno1 = scan.nextInt();
+		int n = scan.nextInt();
+		int r = scan.nextInt();
 
-		// Second fraction
-		int num2 = scan.nextInt();
-		int deno2 = scan.nextInt();
+		System.out.println(calculateNPR(n, r));
 
-		// Result of addition will be one fraction
-		int num, deno;
-
-		// If denominator of fraction 1 and 2 is same
-		if (deno1 == deno2) {
-			num = num1 + num2;
-			deno = deno1;
-			calculateGcd(num, deno);
-		} else {
-			num = num1 * deno2 + num2 * deno1;
-			deno = deno1 * deno2;
-			calculateGcd(num, deno);
-		}
 		scan.close();
 	}
 
-	// GCD is used to simplify the fraction
-	static void calculateGcd(int num, int deno) {
-		int gcd = 1;
+	static int calculateNPR(int n, int r) {
+		int nCr = calculateFactorial(n) / calculateFactorial(n-r);
 
-		for (int i = 1; i <= num || i <= deno; i++) {
-			if (num % i == 0 && deno % i == 0) {
-				gcd = i;
-			}
+		return nCr;
+	}
+
+	static int calculateFactorial(int num) {
+		int factorial = 1;
+
+		for(int i = 1; i <= num; i++) {
+			factorial = factorial * i;
 		}
 
-		// Simplifying the fraction values
-		num /= gcd;
-		deno /= gcd;
-
-		System.out.println(num + "/" + deno);
+		return factorial;
 	}
 }
 ```
