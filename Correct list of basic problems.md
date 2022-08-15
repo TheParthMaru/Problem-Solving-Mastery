@@ -51,4 +51,3 @@ To do:
 Do while special
 
 1. Prblm 29 pg 97
-2. Prblm 30 pg 97
