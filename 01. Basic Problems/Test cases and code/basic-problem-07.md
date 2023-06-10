@@ -44,9 +44,9 @@ public class Main {
 
 		if (x == 0 && y == 0) {
 			System.out.println("origin");
-		} else if (x == 0 && y != 0) {
+		} else if (x == 0) {
 			System.out.println("y-axis");
-		} else if (y == 0 && x != 0) {
+		} else if (y == 0) {
 			System.out.println("x-axis");
 		} else if (x > 0 && y > 0) {
 			System.out.println("Quadrant I");
