@@ -15,6 +15,10 @@ Output: -3 2
 ```
 
 **Solution**
+
+<details>
+	<summary>Java solution</summary>
+
 _**Approach 1: Using temporary variable**_
 
 ```java
@@ -60,3 +64,52 @@ public class Main {
 	}
 }
 ```
+
+</details>
+
+<details>
+	<summary>Javascript solution</summary>
+
+_**Approach 1: Using temporary variable**_
+
+```js
+"use strict";
+
+let num1 = 5;
+let num2 = 10;
+
+let temp = num1;
+num1 = num2;
+num2 = temp;
+
+console.log(num1, num2);
+```
+
+_**Approach 2: Not using temporary variable**_
+
+```js
+"use strict";
+
+let num1 = 5;
+let num2 = 10;
+
+num1 = num1 + num2;
+num2 = num1 - num2;
+num1 = num1 - num2;
+
+console.log(num1, num2);
+```
+
+_**Approach 3: Using destructuring**_
+
+```js
+"use strict";
+
+let num1 = 5;
+let num2 = 10;
+
+[num1, num2] = [num2, num1];
+console.log(num1, num2);
+```
+
+</details>
