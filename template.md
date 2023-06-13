@@ -10,8 +10,14 @@ Output:
 ```
 
 **Solution**
+
+<details>
+	<summary>Java solution</summary>
+
 _**Approach 1**_
 
 ```java
 
 ```
+
+</details>
