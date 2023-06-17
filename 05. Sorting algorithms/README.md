@@ -2,7 +2,7 @@
 
 ## Terminologies:
 
-- **In-place sorting:** Algorithms that do not require additional space for sorting the array. The array is sorted in constant space O(n).
+- **In-place sorting:** Algorithms that do not require additional space for sorting the array. The array is sorted in constant space O(1).
 - **Internal sorting:** When all data is placed in the main memory or internal memory then sorting is called internal sorting. Here, the problem cannot take input beyond its size. Example: heap sort, bubble sort, selection sort, quick sort, shell sort, insertion sort.
 - **External sorting:** When all data that needs to be sorted cannot be placed in memory at a time, the sorting is called external sorting. External Sorting is used for the massive amount of data. Merge Sort and its variations are typically used for external sorting. Example: Merge sort, Tag sort, Polyphase sort, Four tape sort, External radix sort, Internal merge sort, etc.
 - **Stable sorting:** When two same data appear in the same order in sorted data without changing their position is called stable sort. Example: merge sort, insertion sort, bubble sort.
